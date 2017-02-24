@@ -1,87 +1,120 @@
 <!doctype html>
-<html lang="ch-cmn">
+<html lang="zh-cmn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>色块表示法</title>
+    <title>Document</title>
     <style>
-        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{
+        body,h1,h2,h3,h4,h5,h6,ul,ol,li,a,input{
             margin: 0;
             padding: 0;
         }
         a{
             text-decoration: none;
         }
-        ul,ol {
-            list-style-type: none;
-        }
+        ul,ol{list-style:none;}
+
         img,input{
             border: none;
         }
         .header{
             height: 124px;
-            /*该属性加与不加的区别？？？*/
             width: 100%;
-            background: #000;/*色块*/
-            /*使用完这个属性后，header向下移动了一段距离？？？*/
-            position:fixed;
-            /*该属性什么意思，演示什么效果？？？*/
+            /*background: red;!**!*/
+            position: fixed;
             z-index: 2;
         }
         .header .inner_top{
             height: 90px;
-            background:rebeccapurple;/*色块*/
-            /*rgba：透明度*/
-            /*background: rgba(0,0,0,0.5);*/
+            /*灰色*/
+            background:rgba(0,0,0,0.5);
         }
         .header .inner_top .inner{
             width: 1094px;
-            /*background: red;!*色块*!*/
             margin: 0 auto;
+            /*background:blue;*/
         }
         .header .inner_top .inner .logo{
             width: 241px;
             height: 87px;
-            /*padding-top padding-left这两个属性忘记写了*/
-            padding-top: 2px;
-            padding-left: 7px;;
-            background:rosybrown;
+            float: left;
+            /*background: #000;*/
+            padding-top:2px;
+            padding-left:7px;
         }
         .header .inner_top .inner .nav{
-            /*background:royalblue;!*色块*!*/
             float: right;
         }
         .header .inner_top .inner .nav .form{
             float: right;
-            padding-top:20px;
-
+            padding-top: 20px;
         }
         .header .inner_top .inner .nav .form .text{
             width: 152px;
             height: 18px;
-            background: url("images/search.png") no-repeat ;
+            float: left;
+            background: url("images/search.png") no-repeat;
             float: left;
         }
         .header .inner_top .inner .nav .form .sub{
             width: 22px;
             height: 18px;
-            /*此时的right是显示图片的右边的搜索图片*/
             background: url("images/search.png") no-repeat right top;
-            /*该属性是？？？在页面呈现的效果？？？？？？*/
             cursor:pointer;
-            float: left;
+            float:left;
         }
-        .header .inner_top .inner .nav ul{height:12px;padding-top:14px;}
-        .header .inner_top .inner .nav li{float:right;padding-left:17px;color:#bcbabb;font-size:12px;font-family:"宋体";}
-        .header .inner_top .inner .nav li a{color:#bcbabb;font-size:12px;font-family:"宋体";}
-        .header .inner_top .inner .nav li a:hover{color:rgba(255,0,0,0.5);}
-
+        .header .inner_top .inner .nav ul{
+            height: 12px;
+            padding-top: 14px;
+        }
+        .header .inner_top .inner .nav li{
+            float:left;
+            padding-left:17px;
+            color:#bcbabb;
+            font-size:12px;
+            font-family:"宋体";
+        }
+        .header .inner_top .inner .nav li a
+        {
+            color:#bcbabb;
+            font-size:12px;
+            font-family:"宋体";
+        }
+        .header .inner_top .inner .nav li a:hover{
+            color:rgba(255,0,0,0.5);
+        }
         .header .inner_bot{
             height: 34px;
-            background:rosybrown;/*色块*/
+            background:rgba(255,0,0,0.5);
         }
+        .header .inner_bot ul{
+            width:1087px;
+            padding-left:7px;
+            margin:0 auto;
+        }
+        .header .inner_bot li
+        {
+            width:130px;
+            float:left;
+        }
+        .header .inner_bot li a
+        {
+            color:#fff;
+            font-size:12px;
+            font-family:"微软雅黑";
+        }
+        .header .inner_bot li a:hover{
+            color:rgba(255,0,0,0.5);
+        }
+        .banner{
+            height:440px;
+            background:url(images/panzi.jpg) no-repeat center;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -89,17 +122,17 @@
         <div class="inner_top">
             <div class="inner">
                 <div class="logo">
-                    <a href="###">
+                    <a href="#">
                         <img src="images/logo.png">
                     </a>
                 </div>
                 <div class="nav">
                     <ul>
-                        <li>欢迎光临美国康宁餐具官网</li>
-                        <li>返回首页</li>
-                        <li>[注册 / 登录]</li>
-                        <li>康宁餐具全球官网</li>
-                        <li>联系我们 | 人才招聘</li>
+                        <li><a href="#">欢迎光临美国康宁餐具官网</a></li>
+                        <li><a href="#">返回首页</a></li>
+                        <li><a href="#">[注册 / 登录]</a></li>
+                        <li><a href="#">康宁套餐全球官网</a></li>
+                        <li><a href="">联系我们</a> |<a href="#">人才招聘</a></li>
                     </ul>
                     <div class="form">
                         <input type="text" class="text" value="请输入搜索值">
@@ -108,34 +141,51 @@
                 </div>
             </div>
         </div>
-        <div class="inner_bot"></div>
+        <div class="inner_bot">
+            <ul class="inner">
+                <li><a href="#">百年康宁</a></li>
+                <li><a href="#">品牌专区</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#">明星产品</a></li>
+                <li><a href="#">新闻动态</a></li>
+                <li><a href="#">康宁心煮艺</a></li>
+                <li><a href="#">康宁俱乐部</a></li>
+            </ul>
+
+        </div>
     </div>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>aaaaaaaaaaa</p>
-    <p>ddddddddddddddddddddddddddddd</p>
-    <p>ddddddddddddddddddddddddddddd</p>
-    <p>ddddddddddddddddddddddddddddd</p>
-    <p>ddddddddddddddddddddddddddddd</p>
-    <p>ddddddddddddddddddddddddddddd</p>
+    <div class="banner"></div>
+
+
+
+
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+    <p>qqqqqq</p>
+
+
+
+
+
 
 
 </body>
