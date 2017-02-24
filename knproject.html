@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>康定家具练习</title>
     <style>
-        body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,a,input{padding:0;margin:0;}
+        body,ul,li,a,input,h3{padding:0;margin:0;}
         a{text-decoration:none;}
         ul,ol{list-style:none;}
         img,input{border:none;}
@@ -55,7 +55,7 @@
             width: 22px;
             height: 18px;
 
-            /*该句不理解*/
+            /*该句不理解*/ /*背景图片  不平铺   右边    上边*/
             background: url("images/search.png") no-repeat right top;
             cursor:pointer;
             float: left;
@@ -103,6 +103,7 @@
             font-family:"微软雅黑";
         }
         .header .inner_bot li a:hover{
+            /*透明度*/
             color:rgba(255,0,0,0.5);
         }
         .banner{
@@ -110,8 +111,7 @@
             background: url("images/panzi.jpg") no-repeat center;
         }
         .nav1{
-            height: 90px;
-            background:url("images/banner_bottom.jpg") repeat-x;
+            background:url(images/banner_bottom.jpg) repeat-x;height:90px;
         }
         .nav1 ul{
             width:1087px;
@@ -125,11 +125,57 @@
         .nav1 img{
             height:52px;
         }
-        .main {
-            width: 10px;
-            /*background:url("images/");*/
-
+        .main{
+            background:url(images/main_bg.jpg) no-repeat center top;
         }
+
+        .main .top{
+            height:411px;
+            /*background:rebeccapurple;!*色块*!*/
+        }
+        .main .top .inner {
+            width:1094px;
+            margin:0 auto;
+            /*background:grey;!*色块*!*/
+        }
+        .main .top .inner h3{
+            font-size:24px;
+            font-family:"微软雅黑";
+            /*normal：正常的，正规的*/
+            font-weight:normal;
+            color:#616360;
+            padding-top:34px;
+            height:65px;
+            line-height:65px;
+        }
+        .main .top .inner li{
+            float:left;
+            text-align:center;
+            padding:0 8px;
+            /*background: #000;!*色块*!*/
+        }
+        .main .top .inner .pic{
+            width:202px;
+            height:195px;
+            padding-top:7px;
+            background:url(images/proBg.png) no-repeat center;
+            position:relative;
+            /*background:darkgreen;!*色块*!*/
+        }
+        .main .top .inner .pic .icon{
+            position:absolute;
+            right:-10px;
+            bottom:-10px;
+        }
+        .main .top .inner p a{
+            color:#616360;
+            font-size:12px;
+            font-family:"宋体";
+        }
+        .main .top .inner p a:hover{
+            color:rgba(255,0,0,0.5);
+        }
+
     </style>
 </head>
 <body>
@@ -217,50 +263,76 @@
         </ul>
     </div>
     <div class="main">
+        <div class="top">
+            <div id="mingxingchanpin" class="inner">
+                <h3>明星产品</h3>
+                <ul>
+                    <li>
+                        <div class="pic">
+                            <div class="icon">
+                                <img src="images/campion.png"/>
+                            </div>
+                            <a href="#">
+                                <img src="images/list-01.jpg"/>
+                            </a>
+                        </div>
+                        <p><a href="#">Visions晶彩透明锅</a></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <div class="icon"><img src="images/campion.png"/></div><a href="#"><img src="images/list-02.jpg"/></a></div>
+                        <p><a href="#">Swiss Diamond瑞仕钻锅</a></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <div class="icon">
+                                <img src="images/campion.png"/>
+                            </div>
+                            <a href="#">
+                                <img src="images/list-03.jpg"/>
+                            </a>
+                        </div>
+                        <p>
+                            <a href="#">Green Pan格林攀
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <div class="icon">
+                                <img src="images/campion.png"/>
+                            </div>
+                            <a href="#">
+                                <img src="images/list-04.jpg"/>
+                            </a>
+                        </div>
+                        <p><a href="#">Pyrex百丽</a></p>
+                    </li>
+                    <li>
+                        <div class="pic">
+                            <div class="icon">
+                                <img src="images/campion.png"/>
+                            </div>
+                            <a href="#">
+                                <img src="images/list-05.jpg"/>
+                            </a>
+                        </div>
+                        <p><a href="#">Corningware康宁锅</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bat">
+            <ul id="康宁心煮艺" class="inner">
+                <!--<li>康宁心煮艺-->
+
+                <!--</li>-->
+                <!--<li>社会动态</li>-->
+                <!--<li>活动信息</li>-->
+                <!--<li>康宁俱乐部</li>-->
+            </ul>
+        </div>
     </div>
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>333333333333333</p>-->
-<!--<p>333333333333333</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-<!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>333333333333333</p>-->
-    <!--<p>333333333333333</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
-    <!--<p>111111111111</p>-->
+
 </body>
 </html>
