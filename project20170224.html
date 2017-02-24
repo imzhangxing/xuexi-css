@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ch-cmn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>色块表示法</title>
+    <style>
+        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,ol {
+            list-style-type: none;
+        }
+        img,input{
+            border: none;
+        }
+        .header{
+            height: 124px;
+            /*该属性加与不加的区别？？？*/
+            width: 100%;
+            background: #000;/*色块*/
+            /*使用完这个属性后，header向下移动了一段距离？？？*/
+            position:fixed;
+            /*该属性什么意思，演示什么效果？？？*/
+            z-index: 2;
+        }
+        .header .inner_top{
+            height: 90px;
+            background:rebeccapurple;/*色块*/
+            /*rgba：透明度*/
+            /*background: rgba(0,0,0,0.5);*/
+        }
+        .header .inner_top .inner{
+            width: 1094px;
+            /*background: red;!*色块*!*/
+            margin: 0 auto;
+        }
+        .header .inner_top .inner .logo{
+            width: 241px;
+            height: 87px;
+            /*padding-top padding-left这两个属性忘记写了*/
+            padding-top: 2px;
+            padding-left: 7px;;
+            background:rosybrown;
+        }
+        .header .inner_top .inner .nav{
+            /*background:royalblue;!*色块*!*/
+            float: right;
+        }
+        .header .inner_top .inner .nav .form{
+            float: right;
+            padding-top:20px;
+
+        }
+        .header .inner_top .inner .nav .form .text{
+            width: 152px;
+            height: 18px;
+            background: url("images/search.png") no-repeat ;
+            float: left;
+        }
+        .header .inner_top .inner .nav .form .sub{
+            width: 22px;
+            height: 18px;
+            /*此时的right是显示图片的右边的搜索图片*/
+            background: url("images/search.png") no-repeat right top;
+            /*该属性是？？？在页面呈现的效果？？？？？？*/
+            cursor:pointer;
+            float: left;
+        }
+        .header .inner_top .inner .nav ul{height:12px;padding-top:14px;}
+        .header .inner_top .inner .nav li{float:right;padding-left:17px;color:#bcbabb;font-size:12px;font-family:"宋体";}
+        .header .inner_top .inner .nav li a{color:#bcbabb;font-size:12px;font-family:"宋体";}
+        .header .inner_top .inner .nav li a:hover{color:rgba(255,0,0,0.5);}
+
+        .header .inner_bot{
+            height: 34px;
+            background:rosybrown;/*色块*/
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_top">
+            <div class="inner">
+                <div class="logo">
+                    <a href="###">
+                        <img src="images/logo.png">
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>欢迎光临美国康宁餐具官网</li>
+                        <li>返回首页</li>
+                        <li>[注册 / 登录]</li>
+                        <li>康宁餐具全球官网</li>
+                        <li>联系我们 | 人才招聘</li>
+                    </ul>
+                    <div class="form">
+                        <input type="text" class="text" value="请输入搜索值">
+                        <input type="submit" class="sub" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner_bot"></div>
+    </div>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>aaaaaaaaaaa</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+    <p>ddddddddddddddddddddddddddddd</p>
+
+
+</body>
+</html>
