@@ -3,192 +3,118 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>康宁家具</title>
+    <title>康宁家具练习</title>
     <style type="text/css">
-        /*body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,a,input{padding:0;margin:0;}*/
-        /*a{text-decoration:none;}*/
-        /*ul,ol{list-style:none;}*/
-        /*img,input{border:none;}*/
-        /*.header{*/
-            /*height: 124px;*/
-            /*!*width:100%*!*/
-            /*width: 100%;*/
-            /*!*background: #000;!*色块*!*!*/
-            /*!*让图片不会随页面随滚轮为消失*!*/
-            /*position: fixed;*/
-            /*!*css中的高级用法，暂时先不用管*!*/
-            /*z-index: 2;*/
-
-        /*}*/
-        /*.header .inner_top{*/
-            /*height: 90px;*/
-            /*background: rgba(0,0,0,0.5);*/
-            /*!*background: grey;!*色块*!*!*/
-        /*}*/
-        /*.header .inner_top .inner {*/
-            /*width:1094px;margin:0 auto;*/
-        /*}*/
-
-        /*.header .inner_top .inner .logo{*/
-            /*!*浮动勿忘记*!*/
-            /*float: left;*/
-            /*width: 248px;*/
-            /*height: 89px;*/
-            /*!*定位勿忘记*!*/
-            /*padding-top: 2px;*/
-            /*!*定位勿忘记*!*/
-            /*padding-left: 7px;*/
-            /*!*background: rebeccapurple;!*色块*!*!*/
-        /*}*/
-        /*.header .inner_top .inner .nav{*/
-            /*!*这儿两句需要注释，在nav中没有定义*!*/
-            /*width: 565px;*/
-            /*height: 66px;*/
-            /*!*background: chartreuse;!*色块*!*!*/
-            /*float: right;*/
-        /*}*/
-        /*.header .inner_top .inner .nav .form{*/
-            /*float: right;*/
-            /*padding-top: 20px;*/
-        /*}*/
-        /*.header .inner_top .inner .nav .form .text{*/
-            /*width: 152px;*/
-            /*height: 18px;*/
-            /*background: url("images/search.png") no-repeat;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .inner_top .inner .nav .form .sub{*/
-            /*width: 22px;*/
-            /*height: 18px;*/
-            /*background: url("images/search.png") no-repeat right top;*/
-            /*!*不懂该代码的含义*!*/
-            /*cursor: pointer;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul{*/
-            /*height: 12%;*/
-            /*padding-top: 14px;*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul li{*/
-            /*float: left;*/
-            /*padding-left:17px;*/
-            /*color: #bcbabb;*/
-            /*font-size: 12px;*/
-            /*font-family: "宋体";*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul li a{*/
-            /*color: #bcbabb;*/
-            /*font-size: 12px;*/
-            /*font-family: "宋体";*/
-        /*}*/
-        body,h1,h2,h3,h4,h5,h6,p,ul,li,ol,a,input{padding:0;margin:0;}
-        a{text-decoration:none;}
-        ul,ol{list-style:none;}
-        img,input{border:none;}
-
-        .header{height:124px;width:100%;position:fixed;z-index:2;}
-        .header .inner_top{background:rgba(0,0,0,0.5);height:90px;}
-        .header .inner_top .inner{width:1094px;margin:0 auto;}
-        .header .inner_top .inner .logo{float:left;width:87px;width:241px;padding-top:2px;padding-left:7px;}
-        .header .inner_top .inner .nav{float:right;}
-        .header .inner_top .inner .nav .form{float:right;padding-top:20px;}
-        .header .inner_top .inner .nav .form .text{width:152px;height:18px;background:url(images/search.png) no-repeat;float:left;}
-        .header .inner_top .inner .nav .form .sub{width:22px;height:18px;background:url(images/search.png) no-repeat right top; cursor:pointer;float:left;}
-        .header .inner_top .inner .nav ul{height:12px;padding-top:14px;}
-        .header .inner_top .inner .nav li{float:right;padding-left:17px;color:#bcbabb;font-size:12px;font-family:"宋体";}
-        .header .inner_top .inner .nav li a{color:#bcbabb;font-size:12px;font-family:"宋体";}
-        .header .inner_top .inner .nav li a:hover{color:rgba(255,0,0,0.5);}
-        .header .inner_bot{height:34px;background:rgba(255,0,0,0.5);}
-        .header .inner_bot ul{width:1087px;padding-left:7px;margin:0 auto;}
-        .header .inner_bot li{width:130px;float:left;}
-        .header .inner_bot li a{color:#fff;font-size:12px;font-family:"微软雅黑";}
-        .header .inner_bot li a:hover{color:rgba(255,0,0,0.5);}
-        .banner{height:440px;background:url(images/panzi.jpg) no-repeat center;}
-        .nav1{background:url(images/banner_bottom.jpg) repeat-x;height:90px;}
-
-
-
-
-
-        .inner_bot{
-            height: 34px;
-            /*background: rosybrown;!*色块*!*/
-            background: rgba(250,0,0,0.5);
+        body,h1,h2,h3,h4,h5,h6,ul,ol,li,a,input{
+            margin: 0;
+            padding: 0;
         }
-        .header .inner_bot ul{
-            width: 1087px;
-            padding-left:7px;
+        a{
+            text-decoration: none;
+        }
+        ul,ol{
+            list-style-type: none;
+        }
+        img,input{
+            border: none;
+        }
+        .header{/*4*/
+            height: 124px;
+            width: 100%;
+            /*background: #000;*/
+            position: fixed;
+            z-index: 2;
+        }
+        .header .inner_top{/*2*/
+            height: 90px;
+            background: rgba(0,0,0,0.5);
+            /*background: rebeccapurple;*/
+        }
+        .header .inner_top .inner{/*2*/
+            width: 1094px;
+            background: rosybrown;
             margin: 0 auto;
         }
-        .header .inner_bot ul li{
-            width: 130px;
+        .header .inner_top .inner .logo{/*5*/
+            float: left;
+            width: 241px;
+            height: 87px;
+            /*background: royalblue;*/
+            padding-top: 2px;
+            padding-left: 7px;
+        }
+        .header .inner_top .inner .nav{
+            float: right;
+            /*background: aquamarine;*/
+        }
+        .header .inner_top .inner .nav .form{
+            float: right;
+            padding-top: 20px;
+        }
+        .header .inner_top .inner .nav .form .text{
+            width: 152px;
+            height: 18px;
+            background: url("images/search.png") no-repeat;
             float: left;
         }
-        .header .inner_bot ul li a{
+        .header .inner_top .inner .nav .form .sub{/*5*/
+            width: 22px;
+            height: 18px;
+            background: url("images/search.png")no-repeat right top;
+            cursor: pointer;
+            float: left;
+        }
+        .header .inner_top .inner .nav ul{/*2*/
+            height: 12px;
+            padding: 14px;
+            /*background:orange;*/
+        }
+        .header .inner_top .inner .nav ul li{/*5*/
+            float: left;
+            padding-left: 17px;
+            color: #bcbabb;
+
+            font-size: 12px;
+            font-family: "宋体";
+        }
+        .header .inner_top .inner .nav ul li a{
+            color: #bcbabb;
+            font-size: 12px;
+            font-family: 宋体;
+        }
+        .header .inner_top .inner .nav ul li a:hover{
+            color: rgba(250,0,0,0.5);
+        }
+        .header .inner_bot{
+            height: 34px;
+            background: rgba(255,0,0,0.5);
+        }
+        .header .inner_bot ul{/*3*/
+            width: 1087px;
+            padding-left: 7px;
+            margin: 0 auto;
+        }
+        .header .inner_bot ul li{/*2*/
+            width: 130px;
+            float: left;
+            /*background: #000;*/
+        }
+        .header .inner_bot ul li a{/*3*/
             color: #fff;
             font-size: 12px;
-            font-family: "微软雅黑";
+            font-family: "宋体";
         }
-        .header .inner_bot li a:hover {
-            color:rgba(255,0,0,0.5);
+        .header .inner_bot ul li a:hover{
+            color: rgba(255,0,0,0.5);
         }
         .banner{
             height: 440px;
-            /*background:rebeccapurple ;*//*色块*/
             background: url("images/panzi.jpg") no-repeat center;
         }
-        .nav1{
-            height: 90px;
-            background:grey;/*色块*/
-        }
-        .main{
-            height: 869px;
-            background:darkgreen;/*色块*/
-        }
-        .footer{
-            height: 127%;
-        }
-        .bottom{
 
-        }
     </style>
 </head>
 
 <body>
-<div class="header">
-    <div class="inner_top">
-        <div class="inner">
-            <div class="logo">
-                <a href="#"><img src="images/logo.png"/></a>
-            </div>
-            <div class="nav">
-                <ul>
-                    <li><a href="#">联系我们</a> | <a href="#">人才招聘</a></li>
-                    <li><a href="#">康宁餐具全球官网</a></li>
-                    <li>[<a href="#">注册</a> / <a href="#">登录</a>]</li>
-                    <li><a href="#">返回首页</a></li>
-                    <li>欢迎光临美国康宁餐具官网</li>
-                </ul>
-                <div class="form">
-                    <form>
-                        <input type="text" class="text" value="请输入搜索值" /><input type="submit" class="sub" value=""/>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="inner_bot">
-        <ul class="inner">
-            <li><a href="#">百年康宁</a></li>
-            <li><a href="#">品牌专区</a></li>
-            <li><a href="#">产品中心</a></li>
-            <li><a href="#mingxingchanpin">明星产品</a></li>
-            <li><a href="#">新闻动态</a></li>
-            <li><a href="#kangningxinzhuyi">康宁心煮艺</a></li>
-            <li><a href="#">康宁俱乐部</a></li>
-        </ul>
-    </div>
-</div>
-<div class="banner"></div>
 </body>
 </html>
