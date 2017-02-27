@@ -5,108 +5,231 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>康宁家具练习</title>
     <style>
-        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{
+        /*body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
+        /*a{*/
+            /*text-decoration: none;*/
+        /*}*/
+        /*ul,ol {*/
+            /*list-style-type: none;*/
+        /*}*/
+        /*img,input{*/
+            /*border: none;*/
+        /*}*/
+        /*.header{!*4*!*/
+            /*height: 124px;*/
+            /*width: 100%;*/
+            /*position: fixed;*/
+            /*z-index: 2;*/
+            /*!*background: #000;*!*/
+        /*}*/
+        /*.header .inner_top{!*2*!*/
+            /*height: 90px;*/
+            /*background: rgba(0,0,0,0.5);*/
+            /*!*background: royalblue;*!*/
+        /*}*/
+        /*.header .inner_top .inner{!*2*!*/
+            /*width: 1094px;*/
+            /*margin: 0 auto;*/
+            /*!*background: rosybrown;*!*/
+        /*}*/
+        /*.header .inner_top .inner .logo{!*width、height、float、padding-top/left*!*/
+            /*width: 241px;*/
+            /*height: 87px;*/
+            /*float: left;*/
+            /*padding-top: 2px;*/
+            /*padding-left: 7px;*/
+        /*}*/
+        /*.header .inner_top .inner .nav{!*1*!*/
+            /*float: right;*/
+        /*}*/
+        /*.header .inner_top .inner .nav .form{*/
+            /*float: right;*/
+            /*padding-top: 20px;*/
+        /*}*/
+
+         /*.header .inner_top .inner .nav .form .text{!*4*!*/
+            /*width: 152px;*/
+            /*height: 18px;*/
+            /*background: url("images/search.png") no-repeat;*/
+            /*float: left;*/
+        /*}*/
+        /*.header .inner_top .inner .nav .form .sub{!*5*!*/
+            /*width: 22px;*/
+            /*height: 18px;*/
+            /*background: url("images/search.png") no-repeat right top;*/
+            /*cursor: pointer;*/
+            /*float: left;*/
+        /*}*/
+        /*.header .inner_top .inner .nav ul{!*2*!*/
+            /*height: 12px;*/
+            /*padding-top:14px;*/
+        /*}*/
+        /*.header .inner_top .inner .nav ul li{!*5*!*/
+            /*float: left;*/
+            /*padding-left: 17px;*/
+            /*color: #bcbabb;*/
+            /*font-size: 12px;*/
+            /*font-family: "宋体";*/
+        /*}*/
+        /*.header .inner_top .inner .nav ul li a{!*3*!*/
+            /*color: #bcbabb;*/
+            /*font-size: 12px;*/
+            /*font-family: "宋体";*/
+        /*}*/
+        /*.inner_bot{!*2*!*/
+            /*height: 34px;*/
+            /*background: rgba(250,0,0,0.5);*/
+        /*}*/
+        /*.inner_bot ul{!*3*!*/
+            /*width: 1087px;*/
+            /*padding-left: 7px;*/
+            /*margin: 0 auto;*/
+        /*}*/
+        /*.inner_bot ul li{!*2*!*/
+            /*width: 130px;*/
+            /*float: left;*/
+        /*}*/
+        /*.header .inner_bot li a{!*3*!*/
+            /*color: #fff;*/
+            /*font-size: 12px;*/
+            /*font-family: "微软雅黑";*/
+        /*}*/
+        /*.header .inner_bot li a:hover{!*1*!*/
+            /*color: rgba(250,0,0,0.5);*/
+        /*}*/
+        /*.banner{*/
+            /*height: 440px;*/
+            /*background: url("images/panzi.jpg") no-repeat center;*/
+        /*}*/
+    </style>
+    <style>
+        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,p,input{
             margin: 0;
             padding: 0;
         }
         a{
             text-decoration: none;
         }
-        ul,ol {
+        ul,ol{
             list-style-type: none;
         }
         img,input{
             border: none;
         }
-        .header{/*4*/
+        .header{
             height: 124px;
             width: 100%;
-            position: fixed;
+            position:fixed;
             z-index: 2;
             /*background: #000;*/
         }
-        .header .inner_top{/*2*/
+        .header .inner_top{
             height: 90px;
-            background: rgba(0,0,0,0.5);
             /*background: royalblue;*/
+            background: rgba(0,0,0,0.5);
         }
-        .header .inner_top .inner{/*2*/
+        .header .inner_top .inner{
             width: 1094px;
-            margin: 0 auto;
             /*background: rosybrown;*/
+            margin: 0 auto;
         }
-        .header .inner_top .inner .logo{/*width、height、float、padding-top/left*/
+        .header .inner_top .inner .logo{
+            float: left;
             width: 241px;
             height: 87px;
-            float: left;
             padding-top: 2px;
             padding-left: 7px;
+            /*background: blue;*/
         }
-        .header .inner_top .inner .nav{/*1*/
+        .header .inner_top .inner .nav{
             float: right;
+            /*background: red;*/
         }
         .header .inner_top .inner .nav .form{
             float: right;
             padding-top: 20px;
         }
-
-         .header .inner_top .inner .nav .form .text{/*4*/
+        .header .inner_top .inner .nav .form .text{
             width: 152px;
             height: 18px;
             background: url("images/search.png") no-repeat;
             float: left;
         }
-        .header .inner_top .inner .nav .form .sub{/*5*/
+        .header .inner_top .inner .nav .form .sub{
             width: 22px;
             height: 18px;
-            background: url("images/search.png") no-repeat right top;
+            background: url("images/search.png")no-repeat right top;
             cursor: pointer;
             float: left;
         }
-        .header .inner_top .inner .nav ul{/*2*/
+        .header .inner_top .inner .nav ul{
             height: 12px;
-            padding-top:14px;
+            padding-top: 14px;
+            /*background: #000;*/
         }
-        .header .inner_top .inner .nav ul li{/*5*/
+        .header .inner_top .inner .nav ul li{
             float: left;
-            padding-left: 17px;
-            color: #bcbabb;
+            padding-left:17px;
+            color: #fff;
             font-size: 12px;
             font-family: "宋体";
         }
-        .header .inner_top .inner .nav ul li a{/*3*/
-            color: #bcbabb;
+        .header .inner_top .inner .nav ul a{
+            color: #fff;
             font-size: 12px;
             font-family: "宋体";
         }
-        .inner_bot{/*2*/
+        .header .inner_top .inner .nav ul a:hover{
+            color: rgba(250,0,0,0.5);
+        }
+        .header .inner_bot{
             height: 34px;
             background: rgba(250,0,0,0.5);
         }
-        .inner_bot ul{/*3*/
+        .header .inner_bot ul{
             width: 1087px;
             padding-left: 7px;
             margin: 0 auto;
         }
-        .inner_bot ul li{/*2*/
+        .header .inner_bot ul li{
             width: 130px;
             float: left;
         }
-        .header .inner_bot li a{/*3*/
-            color: #fff;
+        .header .inner_bot ul li a{
             font-size: 12px;
-            font-family: "微软雅黑";
+            color: #fff;
+            font-family: "微软雅黑" ;
         }
-        .header .inner_bot li a:hover{/*1*/
-            color: rgba(250,0,0,0.5);
+        .header .inner_bot ul li a:hover{
+            background: rgba(250,0,0,0.5);
         }
         .banner{
             height: 440px;
-            background: url("images/panzi.jpg") no-repeat center;
+            background: url("images/panzi.jpg") center;
         }
+        .nav1{
+            background: url(images/banner_bottom.jpg) repeat-x;
+            height: 90px;
+            /*background: #000;*/
+        }
+        .nav1 ul{
+            width: 1087px;
+            padding-left: 7px;
+            padding-top: 19px;
+            margin: 0 auto;
+        }
+        .nav1 ul li{
+            float: left;
+        }
+        .nav1,img{
+            height: 52px;
+        }
+        
     </style>
 </head>
-
 <body>
     <div class="header">
         <div class="inner_top">
@@ -142,5 +265,18 @@
         </div>
     </div>
     <div class="banner"></div>
+    <div class="nav1">
+        <ul>
+            <li><a href="#"><img src="images/link01.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link02.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link03.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link04.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link05.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link06.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link07.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link08.png" alt=""></a></li>
+            <li><a href="#"><img src="images/link09.png" alt=""></a></li>
+        </ul>
+    </div>
 </body>
 </html>
