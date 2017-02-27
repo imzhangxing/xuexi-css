@@ -1,112 +1,13 @@
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="ch-cmn">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>康宁家具练习</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <style>
-        /*body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{*/
-            /*margin: 0;*/
-            /*padding: 0;*/
-        /*}*/
-        /*a{*/
-            /*text-decoration: none;*/
-        /*}*/
-        /*ul,ol {*/
-            /*list-style-type: none;*/
-        /*}*/
-        /*img,input{*/
-            /*border: none;*/
-        /*}*/
-        /*.header{!*4*!*/
-            /*height: 124px;*/
-            /*width: 100%;*/
-            /*position: fixed;*/
-            /*z-index: 2;*/
-            /*!*background: #000;*!*/
-        /*}*/
-        /*.header .inner_top{!*2*!*/
-            /*height: 90px;*/
-            /*background: rgba(0,0,0,0.5);*/
-            /*!*background: royalblue;*!*/
-        /*}*/
-        /*.header .inner_top .inner{!*2*!*/
-            /*width: 1094px;*/
-            /*margin: 0 auto;*/
-            /*!*background: rosybrown;*!*/
-        /*}*/
-        /*.header .inner_top .inner .logo{!*width、height、float、padding-top/left*!*/
-            /*width: 241px;*/
-            /*height: 87px;*/
-            /*float: left;*/
-            /*padding-top: 2px;*/
-            /*padding-left: 7px;*/
-        /*}*/
-        /*.header .inner_top .inner .nav{!*1*!*/
-            /*float: right;*/
-        /*}*/
-        /*.header .inner_top .inner .nav .form{*/
-            /*float: right;*/
-            /*padding-top: 20px;*/
-        /*}*/
-
-         /*.header .inner_top .inner .nav .form .text{!*4*!*/
-            /*width: 152px;*/
-            /*height: 18px;*/
-            /*background: url("images/search.png") no-repeat;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .inner_top .inner .nav .form .sub{!*5*!*/
-            /*width: 22px;*/
-            /*height: 18px;*/
-            /*background: url("images/search.png") no-repeat right top;*/
-            /*cursor: pointer;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul{!*2*!*/
-            /*height: 12px;*/
-            /*padding-top:14px;*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul li{!*5*!*/
-            /*float: left;*/
-            /*padding-left: 17px;*/
-            /*color: #bcbabb;*/
-            /*font-size: 12px;*/
-            /*font-family: "宋体";*/
-        /*}*/
-        /*.header .inner_top .inner .nav ul li a{!*3*!*/
-            /*color: #bcbabb;*/
-            /*font-size: 12px;*/
-            /*font-family: "宋体";*/
-        /*}*/
-        /*.inner_bot{!*2*!*/
-            /*height: 34px;*/
-            /*background: rgba(250,0,0,0.5);*/
-        /*}*/
-        /*.inner_bot ul{!*3*!*/
-            /*width: 1087px;*/
-            /*padding-left: 7px;*/
-            /*margin: 0 auto;*/
-        /*}*/
-        /*.inner_bot ul li{!*2*!*/
-            /*width: 130px;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .inner_bot li a{!*3*!*/
-            /*color: #fff;*/
-            /*font-size: 12px;*/
-            /*font-family: "微软雅黑";*/
-        /*}*/
-        /*.header .inner_bot li a:hover{!*1*!*/
-            /*color: rgba(250,0,0,0.5);*/
-        /*}*/
-        /*.banner{*/
-            /*height: 440px;*/
-            /*background: url("images/panzi.jpg") no-repeat center;*/
-        /*}*/
-    </style>
-    <style>
-        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,p,input{
+        body,h1,h2,h3,h4,h5,h6,ul,li,ol,p,a,input{
             margin: 0;
             padding: 0;
         }
@@ -119,164 +20,121 @@
         img,input{
             border: none;
         }
-        .header{
-            height: 124px;
-            width: 100%;
-            position:fixed;
-            z-index: 2;
-            /*background: #000;*/
+        .banleft{
+            width: 300px;
+            min-height: 802px;
+            background: #254459;
         }
-        .header .inner_top{
-            height: 90px;
-            /*background: royalblue;*/
-            background: rgba(0,0,0,0.5);
+        .banleft .divheader{
+            /*padding-top: 12px;*/
+            /*padding-left: 12px;*/
+            margin-top: 12px;
+
         }
-        .header .inner_top .inner{
-            width: 1094px;
-            /*background: rosybrown;*/
-            margin: 0 auto;
-        }
-        .header .inner_top .inner .logo{
-            float: left;
-            width: 241px;
-            height: 87px;
-            padding-top: 2px;
-            padding-left: 7px;
-            /*background: blue;*/
-        }
-        .header .inner_top .inner .nav{
-            float: right;
-            /*background: red;*/
-        }
-        .header .inner_top .inner .nav .form{
-            float: right;
-            padding-top: 20px;
-        }
-        .header .inner_top .inner .nav .form .text{
-            width: 152px;
-            height: 18px;
-            background: url("images/search.png") no-repeat;
-            float: left;
-        }
-        .header .inner_top .inner .nav .form .sub{
-            width: 22px;
-            height: 18px;
-            background: url("images/search.png")no-repeat right top;
-            cursor: pointer;
-            float: left;
-        }
-        .header .inner_top .inner .nav ul{
-            height: 12px;
-            padding-top: 14px;
-            /*background: #000;*/
-        }
-        .header .inner_top .inner .nav ul li{
-            float: left;
-            padding-left:17px;
+       .banleft .divheader .img1 {
+           width: 36px;
+           height: 37px;
+           background: orange;
+           line-height: 60px;
+       }
+        .banleft .divheader .span1{
+            width: 120px;
+            height: 28px;
+            /*background: blueviolet;*/
+            font-size: 20px;
+            line-height: 60px;
             color: #fff;
-            font-size: 12px;
-            font-family: "宋体";
         }
-        .header .inner_top .inner .nav ul a{
-            color: #fff;
-            font-size: 12px;
-            font-family: "宋体";
+        .banleft .divnal{
+            width: 260px;
+            height: 40px;
+            background:blue;
+            margin-left:10px;
         }
-        .header .inner_top .inner .nav ul a:hover{
-            color: rgba(250,0,0,0.5);
+        .banleft .divimp .c1{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .header .inner_bot{
-            height: 34px;
-            background: rgba(250,0,0,0.5);
+        .banleft .divimp .c2{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .header .inner_bot ul{
-            width: 1087px;
-            padding-left: 7px;
-            margin: 0 auto;
+        .banleft .divimp .c3{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .header .inner_bot ul li{
-            width: 130px;
-            float: left;
+        .banleft .divimp .c4{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .header .inner_bot ul li a{
-            font-size: 12px;
-            color: #fff;
-            font-family: "微软雅黑" ;
+        .banleft . divimp .c5{
+             margin-top:11px;
+             width: 300px;
+             height: 60px;
+             background: royalblue;
+         }
+        .banleft .divimp .c6{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .header .inner_bot ul li a:hover{
-            background: rgba(250,0,0,0.5);
+        .banleft .divimp .c7{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .banner{
-            height: 440px;
-            background: url("images/panzi.jpg") center;
+        .banleft .divimp .c8{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .nav1{
-            background: url(images/banner_bottom.jpg) repeat-x;
-            height: 90px;
-            /*background: #000;*/
+        .banleft .divimp .c9{
+            margin-top:11px;
+            width: 300px;
+            height: 60px;
+            background: royalblue;
         }
-        .nav1 ul{
-            width: 1087px;
-            padding-left: 7px;
-            padding-top: 19px;
-            margin: 0 auto;
-        }
-        .nav1 ul li{
-            float: left;
-        }
-        .nav1,img{
-            height: 52px;
-        }
-        
+
+
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="inner_top">
-            <div class="inner">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <div class="nav">
-                    <ul>
-                        <li>欢迎光临美国餐具官网</li>
-                        <li><a href="#">返回首页</a></li>
-                        <li><a  href="#">[注册] / [登录]</a></li>
-                        <li><a  href="#">康宁餐具官网</a></li>
-                        <li><a  href="#">联系我们 | 人才招聘</a></li>
-                    </ul>
-                    <div class="form">
-                        <input type="text" class="text" value="请输入搜索值">
-                        <input type="submit" class="sub" value="">
-                    </div>
-                </div>
-            </div>
+    <div class="banleft">
+        <div class="divheader">
+            <img src="" class="img1" alt="">
+            <span class="span1">仓储管理系统</span>
         </div>
-        <div class="inner_bot">
-            <ul class="inner">
-                <li><a href="#">百年康宁</a></li>
-                <li><a href="#">品牌专区</a></li>
-                <li><a href="#">产品中心</a></li>
-                <li><a href="#mingxingchanpin">明星产品</a></li>
-                <li><a href="#">新闻动态</a></li>
-                <li><a href="kanningxinzhuyi">康宁心煮艺</a></li>
-                <li><a href="#">康宁俱乐部</a></li>
+        <div class="divnal">
+        </div>
+        <div class="divimp">
+            <ul>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
+                <li><p><i></i><span>asdgasdg</span></p></li>
             </ul>
         </div>
-    </div>
-    <div class="banner"></div>
-    <div class="nav1">
-        <ul>
-            <li><a href="#"><img src="images/link01.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link02.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link03.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link04.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link05.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link06.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link07.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link08.png" alt=""></a></li>
-            <li><a href="#"><img src="images/link09.png" alt=""></a></li>
-        </ul>
+
     </div>
 </body>
+
+
+
+</div>
 </html>
