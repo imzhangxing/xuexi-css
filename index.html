@@ -4,15 +4,15 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>康宁家具练习</title>
-    <style type="text/css">
-        body,h1,h2,h3,h4,h5,h6,ul,ol,li,a,input{
+    <style>
+        body,h1,h2,h3,h4,h5,h6,ul,li,ol,a,input{
             margin: 0;
             padding: 0;
         }
         a{
             text-decoration: none;
         }
-        ul,ol{
+        ul,ol {
             list-style-type: none;
         }
         img,input{
@@ -21,37 +21,36 @@
         .header{/*4*/
             height: 124px;
             width: 100%;
-            /*background: #000;*/
             position: fixed;
             z-index: 2;
+            /*background: #000;*/
         }
         .header .inner_top{/*2*/
             height: 90px;
             background: rgba(0,0,0,0.5);
-            /*background: rebeccapurple;*/
+            /*background: royalblue;*/
         }
         .header .inner_top .inner{/*2*/
             width: 1094px;
-            background: rosybrown;
             margin: 0 auto;
+            /*background: rosybrown;*/
         }
-        .header .inner_top .inner .logo{/*5*/
-            float: left;
+        .header .inner_top .inner .logo{/*width、height、float、padding-top/left*/
             width: 241px;
             height: 87px;
-            /*background: royalblue;*/
+            float: left;
             padding-top: 2px;
             padding-left: 7px;
         }
-        .header .inner_top .inner .nav{
+        .header .inner_top .inner .nav{/*1*/
             float: right;
-            /*background: aquamarine;*/
         }
         .header .inner_top .inner .nav .form{
             float: right;
             padding-top: 20px;
         }
-        .header .inner_top .inner .nav .form .text{
+
+         .header .inner_top .inner .nav .form .text{/*4*/
             width: 152px;
             height: 18px;
             background: url("images/search.png") no-repeat;
@@ -60,61 +59,88 @@
         .header .inner_top .inner .nav .form .sub{/*5*/
             width: 22px;
             height: 18px;
-            background: url("images/search.png")no-repeat right top;
+            background: url("images/search.png") no-repeat right top;
             cursor: pointer;
             float: left;
         }
         .header .inner_top .inner .nav ul{/*2*/
             height: 12px;
-            padding: 14px;
-            /*background:orange;*/
+            padding-top:14px;
         }
         .header .inner_top .inner .nav ul li{/*5*/
             float: left;
             padding-left: 17px;
             color: #bcbabb;
-
             font-size: 12px;
             font-family: "宋体";
         }
-        .header .inner_top .inner .nav ul li a{
+        .header .inner_top .inner .nav ul li a{/*3*/
             color: #bcbabb;
             font-size: 12px;
-            font-family: 宋体;
+            font-family: "宋体";
         }
-        .header .inner_top .inner .nav ul li a:hover{
-            color: rgba(250,0,0,0.5);
-        }
-        .header .inner_bot{
+        .inner_bot{/*2*/
             height: 34px;
-            background: rgba(255,0,0,0.5);
+            background: rgba(250,0,0,0.5);
         }
-        .header .inner_bot ul{/*3*/
+        .inner_bot ul{/*3*/
             width: 1087px;
             padding-left: 7px;
             margin: 0 auto;
         }
-        .header .inner_bot ul li{/*2*/
+        .inner_bot ul li{/*2*/
             width: 130px;
             float: left;
-            /*background: #000;*/
         }
-        .header .inner_bot ul li a{/*3*/
+        .header .inner_bot li a{/*3*/
             color: #fff;
             font-size: 12px;
-            font-family: "宋体";
+            font-family: "微软雅黑";
         }
-        .header .inner_bot ul li a:hover{
-            color: rgba(255,0,0,0.5);
+        .header .inner_bot li a:hover{/*1*/
+            color: rgba(250,0,0,0.5);
         }
         .banner{
             height: 440px;
             background: url("images/panzi.jpg") no-repeat center;
         }
-
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <div class="inner_top">
+            <div class="inner">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li>欢迎光临美国餐具官网</li>
+                        <li><a href="#">返回首页</a></li>
+                        <li><a  href="#">[注册] / [登录]</a></li>
+                        <li><a  href="#">康宁餐具官网</a></li>
+                        <li><a  href="#">联系我们 | 人才招聘</a></li>
+                    </ul>
+                    <div class="form">
+                        <input type="text" class="text" value="请输入搜索值">
+                        <input type="submit" class="sub" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner_bot">
+            <ul class="inner">
+                <li><a href="#">百年康宁</a></li>
+                <li><a href="#">品牌专区</a></li>
+                <li><a href="#">产品中心</a></li>
+                <li><a href="#mingxingchanpin">明星产品</a></li>
+                <li><a href="#">新闻动态</a></li>
+                <li><a href="kanningxinzhuyi">康宁心煮艺</a></li>
+                <li><a href="#">康宁俱乐部</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner"></div>
 </body>
 </html>
