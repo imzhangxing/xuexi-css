@@ -1,180 +1,115 @@
-<html lang="ch-cmn"><head>
+<!doctype html>
+<html lang="zh-cnm">
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>康定家具练习</title>
     <style>
-        body, h1, h2, h3, h4, h5, h6, ul, li, ol, p, a, input {
-            margin: 0;
+        body{
             padding: 0;
-        }
-        a {
-            text-decoration: none;
-        }
+            margin: 0;
 
-        ul, ol {
+        }
+        ul{
             list-style-type: none;
         }
-
-        img, input {
-            border: none;
+        .header{
+            height: 124px;
+            width: 100%;
+            background: #000;/**/
+            position: fixed;
+            /*疑问*/
+            z-index: 2;
         }
-
-        .banleft {
-            width: 300px;
-            min-height: 802px;
-            background: #254459;
+        .header .inner_top{
+            /*一种颜色*/
+            /*background:rgba(0,0,0,0.5);*/
+            background: red;/**/
+            height: 90px;
         }
-
-        .banleft .divheader {
-            /*padding-top: 12px;*/
-            /*padding-left: 12px;*/
-            margin-top: 12px;
-
+        .header .inner_top .inner{
+            width: 1094px;
+            background: blue;/**/
+            margin: 0 auto;
         }
-
-        .banleft .divheader .img1 {
-            width: 36px;
-            height: 37px;
-            background: orange;
-            line-height: 60px;
-        }
-
-        .banleft .divheader .span1 {
-            width: 120px;
-            height: 28px;
-            /*background: blueviolet;*/
-            font-size: 20px;
-            line-height: 60px;
-            color: #fff;
-        }
-
-        .banleft .divnal {
-            width: 260px;
-            height: 40px;
-            background: blue;
-            margin-left: 10px;
-            /*margin-top: 10px;*/
-        }
-
-        .banleft .divimp .c1 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c2 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c3 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c4 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft . divimp .c5 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c6 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c7 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c8 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c9 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp i {
-            width: 24px;
-            height: 24px;
-            background:orange;
+        .header .inner_top .inner .logo{
             float: left;
-            margin-top: 18px;
-            margin-left: 15px;
-            display: inline-block;
-            margin-right: 10px;
+            width: 241px;
+            height: 87px;
+            background: rebeccapurple;/**/
+            padding-top: 2px;
+            padding-left: 7px;
         }
-        li{
-            height: 60px;
-            line-height: 60px;
+        .header .inner_top .inner .nav{
+            float: right;
         }
+        .header .inner_top .inner .nav .form{
+            float: right;
+        }
+        .header .inner_top .inner .nav .form .text{
+            width: 152px;
+            height: 18px;
+            background: chartreuse;/**/
+            background: url("images/search.png") no-repeat;
+            float: left;
+        }
+        .header .inner_top .inner .nav .form .sub{
+            width: 22px;
+            height: 18px;
+            background: url("images/search.png") no-repeat right top; cursor:pointer;
+            float: left;
+        }
+        .header .inner_top .inner .nav ul{
+            /*height:12px;*/
+            /*padding-top:14px;*/
+            /*background: #000;!**!*/
+        }
+        .header .inner_top .inner .nav li{
+            /*float:right;*/
+            /*padding-left:17px;*/
+            /*color:#bcbabb;*/
+            /*font-size:12px;*/
+            /*font-family:"宋体";*/
+        }
+        .header .inner_top .inner .nav li a{
+            /*color:#bcbabb;*/
+            font-size:12px;
+            font-family:"宋体";
+        }
+        .header .inner_top .inner .nav li a:hover{
+            color:rgba(255,0,0,0.5);
+        }
+
+
+
+
 
     </style>
 </head>
 <body>
-<div class="banleft">
-    <div class="divheader" style="
-    line-height: 60px;
-">
-        <img src="" class="img1" alt="" style="
-    margin-top: 13px;
-    margin-left: 15px;
-    float: left;
-">
-        <span class="span1" style="
-    float: left;
-">仓储管理系统</span>
-        <div class="clear" style="
-    clear: both;
-"></div>
+<div class="header">
+    <div class="inner_top">
+        <div class="inner">
+            <div class="logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>aaa招聘</li>
+                    <li>aaa</li>
+                    <li>aaa</li>
+                    <li>aaa</li>
+                    <li>aaa</li>
+                    <li>aaa</li>
+                </ul>
+                <div class="form">
+                    <input type="text" class="text" value="请输入搜索值" /><input type="submit" class="sub" value=""/>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="divnal">
-    </div>
-    <div class="divimp">
-        <ul>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-        </ul>
-    </div>
-
 </div>
 
-
-
-</body></html>
+</body>
+</html>
