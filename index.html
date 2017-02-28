@@ -114,21 +114,25 @@
         }
         .rightmodular .main ul li a:hover,a:active
         {
-        /*color: #1a14ff;*/
+            /*color: #1a14ff;*/
             background: royalblue;
+            /*因为a属于inline，inline没有*高，给所以display：block; 给a设置宽高 */
+            display: block;
+            width: 90px;
+            height: 22px;
         }
         .rightmodular .main .ulleft li{
-              float: left;
-              width: 90px;
-              padding-left: 21px;
-              display:block;
+            float: left;
+            width: 90px;
+            padding-left: 21px;
+            display:block;
             /*width: 64px;*/
             /*height: 22px;*/
             font-size: 18px;
             line-height: 22px;
             color: #333333;
             line-height: 60px;
-          }
+        }
         .rightmodular .main .ulright li{
             float: right;
 
@@ -158,8 +162,6 @@
             color: #333333;
             line-height: 60px;
         }
-
-
         .datainformation{
             width: 1497px;
             height: 802px;
@@ -176,58 +178,58 @@
     </style>
 </head>
 <body>
-    <div class="leftcolumn" style="float: left;">
-        <div class="header" style="margin-top: 13px;margin-left: 15px;float: left;">
-            <img class="sign" src="images/sign.png" alt="" style="float: left">
-            <span class="title" style="float: left">仓储管理系统</span>
-        </div>
-        <div class="clear" style="clear: both;
+<div class="leftcolumn" style="float: left;">
+    <div class="header" style="margin-top: 13px;margin-left: 15px;float: left;">
+        <img class="sign" src="images/sign.png" alt="" style="float: left">
+        <span class="title" style="float: left">仓储管理系统</span>
+    </div>
+    <div class="clear" style="clear: both;
 "></div>
-        <div class="search" style="line-height: 40px;">
-            <input type="text" class="text" value="搜索.." size="27px" maxlength="20">
-            <img class="search_img" src="images/search_1.png" alt="">
-        </div>
-        <div class="main">
-            <img class="locn" src="" alt="">
-            <ul>
-                <li class="li1"><p><i ></i>客户配置管理</p></li>
-                <li><p><i></i>仓库配置管理</p></li>
-                <li><p><i></i>储位组配置管理</p></li>
-                <li><p><i></i>仓库平面图</p></li>
-                <li><p><i></i>出库单数据查询</p></li>
-                <li><p><i></i>货品配置</p></li>
-                <li><p><i></i>单位管理</p></li>
-                <li><p><i></i>出库数据查询</p></li>
-                <li><p><i></i>仓库平面图</p></li>
-                <li><p><i></i>仓库数据查询</p></li>
-            </ul>
-
-        </div>
+    <div class="search" style="line-height: 40px;">
+        <input type="text" class="text" value="搜索.." size="27px" maxlength="20">
+        <img class="search_img" src="images/search_1.png" alt="">
     </div>
-    <div class="rightmodular" style=" float: left" >
-        <div class="main">
-            <img class="locn" src="images/rightlocn.png" alt="">
-            <ul class="ulleft">
-                <li><a href="#">资源管理</a></li>
-                <li><a href="#">入库作业</a></li>
-                <li><a href="#">库内管理</a></li>
-                <li><a href="#">报表查询</a></li>
-                <li><a href="#">盘点作业</a></li>
-                <li><a href="#">关于我们</a></li>
-            </ul>
-            <ul class="ulright">
-                <li><img class="face" src="images/face.png" alt=""></li>
-                <li><a class="jiuyang" href="#">九阳操作员</a></li>
-                <li><img class="biaozhi" src="images/biaozhi.png" alt=""></li>
-            </ul>
-            <div class="clear" style="clear: both;"></div>
-
-        </div>
-        <div class="minright"></div>
+    <div class="main">
+        <img class="locn" src="" alt="">
+        <ul>
+            <li class="li1"><p><i ></i>客户配置管理</p></li>
+            <li><p><i></i>仓库配置管理</p></li>
+            <li><p><i></i>储位组配置管理</p></li>
+            <li><p><i></i>仓库平面图</p></li>
+            <li><p><i></i>出库单数据查询</p></li>
+            <li><p><i></i>货品配置</p></li>
+            <li><p><i></i>单位管理</p></li>
+            <li><p><i></i>出库数据查询</p></li>
+            <li><p><i></i>仓库平面图</p></li>
+            <li><p><i></i>仓库数据查询</p></li>
+        </ul>
 
     </div>
-    <div class="datainformation">
-        <div class="sekuai"></div>
+</div>
+<div class="rightmodular" style=" float: left" >
+    <div class="main">
+        <img class="locn" src="images/rightlocn.png" alt="">
+        <ul class="ulleft">
+            <li><a href="#">资源管理</a></li>
+            <li><a href="#">入库作业</a></li>
+            <li><a href="#">库内管理</a></li>
+            <li><a href="#">报表查询</a></li>
+            <li><a href="#">盘点作业</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <ul class="ulright">
+            <li><img class="face" src="images/face.png" alt=""></li>
+            <li><a class="jiuyang" href="#">九阳操作员</a></li>
+            <li><img class="biaozhi" src="images/biaozhi.png" alt=""></li>
+        </ul>
+        <div class="clear" style="clear: both;"></div>
+
     </div>
+    <div class="minright"></div>
+
+</div>
+<div class="datainformation">
+    <div class="sekuai"></div>
+</div>
 </body>
 </html>
