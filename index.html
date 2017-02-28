@@ -1,5 +1,5 @@
-
-<html lang="ch-cmn">
+<!doctype html>
+<html lang="ch-cmm">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,229 +7,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <style>
-        body, h1, h2, h3, h4, h5, h6, ul, li, ol, p, a, input {
+        body,ul{
             margin: 0;
             padding: 0;
         }
-        body{
-
-        }
-        a {
+        a{
             text-decoration: none;
         }
-
-        ul, ol {
+        ul{
             list-style-type: none;
         }
-        input,img{
-            border: none;
+        .divleft{
+            width: 1600px;
+            /*height: 300px;*/
+            /*background: #000;*/
         }
-        .leftcolumn{
-            width: 300px;
-            min-height: 802px;
-            /*在inline中可以使用line-height使其对齐*/
-            line-height: 60px;
-            background: #424F63;
+        .divleft ul li{
             float: left;
+            width: 100px;
+            max-height: 60px;
+            /*height: 100px;*/
+            /*background: red;*/
         }
-        .leftcolumn .header .sign{
-            width: 36px;
-            height: 37px;
-            background: orange;
-            float: left;
-            margin-top: 12px;
-            margin-left: 12px;
-        }
-        .leftcolumn .header .title{
-            width: 120px;
-            height: 28px;
-            /*background: blueviolet;*/
+        .divleft ul li a{
+            width: 100%;
+            height: 60px;
+            /*background: blue;*/
             font-size: 20px;
-            line-height: 60px;
-            color: #fff;
-            margin-left:12px;
-            margin-top: 7px;
-        }
-        .leftcolumn .search{
-            width: 260px;
-            height: 40px;
-            background: #354051;
-            margin-left: 19px;
-            margin-top: 19px;
-        }
-        .leftcolumn .search .text{
-            background:#354051;
-            color: #999999;
-            font-size: 14px;
-            /*line-height: 60px;*/
-            /*margin-top: 10px;*/
-            margin-left: 15px;
-            float: left;
-            line-height: 40px;
-        }
-        .leftcolumn .search .search_img{
-            float: right;
-            margin-top: 7px;
-        }
-        .leftcolumn .main i {
-            width: 22px;
-            height: 22px;
-            background:#FAFAFA;
-            float: left;
-            margin-top: 18px;
-            margin-left: 19px;
-            /*上背景图片显示*/
-            display: inline-block;
-            margin-right: 10px;
-        }
-        .leftcolumn .main li{
-            height: 60px;
-            left: 60px;
-        }
-        .leftcolumn .li1{
-            width: 300px;
-            height: 60px;
-            background: #354051;
-            display: inline-block;
-            margin-top: 11px;
-        }
-        .leftcolumn .main li p{
-            font-size: 16px;
-            color: white;
-        }
-        .rightmodular{
-            height: 60px;
-            min-width: 1197px;
-            background: #FFFFFF;
-            display: inline-block;
-        }
-        .rightmodular .main .locn{
-            width: 60px;
-            height: 57px;
-            border-right: 1px solid #FAFAFA;
-            float: left;
-        }
-        .rightmodular .main ul li{
-
-        }
-        .rightmodular .main ul li a:hover,a:active
-        {
-            /*color: #1a14ff;*/
-            background: royalblue;
-            /*因为a属于inline，inline没有*高，给所以display：block; 给a设置宽高 */
+            color: grey;
             display: block;
-            width: 90px;
-            height: 22px;
+            text-align: center;
+            line-height:60px;
+            /*overflow: auto;*/
+            overflow: hidden;
+            /*overflow: inherit;*/
+            /*overflow: scroll;*/
+            /*overflow: visible;*/
         }
-        .rightmodular .main .ulleft li{
-            float: left;
-            width: 90px;
-            padding-left: 21px;
-            display:block;
-            /*width: 64px;*/
-            /*height: 22px;*/
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-            line-height: 60px;
-        }
-        .rightmodular .main .ulright li{
-            float: right;
-
-        }
-        .rightmodular .main .ulright li .face{
-            margin-top: 10px;
-            margin-left: 20px;
-        }
-        .rightmodular .main .ulright li a{
-            /*margin-top:15px;*/
-            margin-right: 1px;
-            /*font-size: 18px;*/
-            /*line-height: 15px;*/
-            /*color: #333333;*/
-            /*!*line-height: 60px;*!*/
-        }
-        .rightmodular .main .ulright li .biaozhi{
-            margin-top: 12px;
-            margin-left: -40px;
-        }
-        .rightmodular .main ul li a{
-            disply:block;
-            width: 64px;
-            height: 22px;
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-            line-height: 60px;
-        }
-        .datainformation{
-            width: 1497px;
-            height: 802px;
-            background:#989A9C;
-        }
-        .datainformation .sekuai{
-            width: 900px;
-            height: 500px;
-            background: white;
-            float: left;
-            margin-top: 50px;
-            margin-left: 100px;
+        .divleft ul li a:hover{
+            /*color: red;*/
+            border-bottom: 3px red solid;
         }
     </style>
 </head>
 <body>
-<div class="leftcolumn" style="float: left;">
-    <div class="header" style="margin-top: 13px;margin-left: 15px;float: left;">
-        <img class="sign" src="images/sign.png" alt="" style="float: left">
-        <span class="title" style="float: left">仓储管理系统</span>
-    </div>
-    <div class="clear" style="clear: both;
-"></div>
-    <div class="search" style="line-height: 40px;">
-        <input type="text" class="text" value="搜索.." size="27px" maxlength="20">
-        <img class="search_img" src="images/search_1.png" alt="">
-    </div>
-    <div class="main">
-        <img class="locn" src="" alt="">
-        <ul>
-            <li class="li1"><p><i ></i>客户配置管理</p></li>
-            <li><p><i></i>仓库配置管理</p></li>
-            <li><p><i></i>储位组配置管理</p></li>
-            <li><p><i></i>仓库平面图</p></li>
-            <li><p><i></i>出库单数据查询</p></li>
-            <li><p><i></i>货品配置</p></li>
-            <li><p><i></i>单位管理</p></li>
-            <li><p><i></i>出库数据查询</p></li>
-            <li><p><i></i>仓库平面图</p></li>
-            <li><p><i></i>仓库数据查询</p></li>
-        </ul>
-
-    </div>
-</div>
-<div class="rightmodular" style=" float: left" >
-    <div class="main">
-        <img class="locn" src="images/rightlocn.png" alt="">
-        <ul class="ulleft">
-            <li><a href="#">资源管理</a></li>
-            <li><a href="#">入库作业</a></li>
-            <li><a href="#">库内管理</a></li>
-            <li><a href="#">报表查询</a></li>
-            <li><a href="#">盘点作业</a></li>
-            <li><a href="#">关于我们</a></li>
-        </ul>
-        <ul class="ulright">
-            <li><img class="face" src="images/face.png" alt=""></li>
-            <li><a class="jiuyang" href="#">九阳操作员</a></li>
-            <li><img class="biaozhi" src="images/biaozhi.png" alt=""></li>
-        </ul>
-        <div class="clear" style="clear: both;"></div>
-
-    </div>
-    <div class="minright"></div>
-
-</div>
-<div class="datainformation">
-    <div class="sekuai"></div>
+<div class="divleft">
+    <ul>
+        <li><a href="#">网页</a></li>
+        <li><a href="#">新闻</a></li>
+        <li><a href="#">贴吧</a></li>
+        <li><a href="#">知道</a></li>
+        <li><a href="#">音乐</a></li>
+        <li><a href="#">图片</a></li>
+        <li><a href="#">视频</a></li>
+        <li><a href="#">地图</a></li>
+        <li><a href="#">文库</a></li>
+    </ul>
 </div>
 </body>
 </html>
