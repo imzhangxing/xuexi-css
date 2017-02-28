@@ -111,37 +111,54 @@
             float: left;
         }
         .rightmodular .main ul li{
-              float: left;
-              width: 90px;
-              padding-left: 21px;
-          }
-        .rightmodular .main .ul li{
-            float: right;
-            width: 90px;
 
-        }
-        .rightmodular .main ul li a{
-            display:block;
-            /*width: 64px;*/
-            /*height: 22px;*/
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-            line-height: 60px;
-        }
-        .rightmodular .main ul li{
-            display:block;
-            /*width: 64px;*/
-            /*height: 22px;*/
-            font-size: 18px;
-            line-height: 22px;
-            color: #333333;
-            line-height: 60px;
         }
         .rightmodular .main ul li a:hover,a:active
         {
-            color: #1a14ff;
+        color: #1a14ff;
         }
+        .rightmodular .main .ulleft li{
+              float: left;
+              width: 90px;
+              padding-left: 21px;
+            display:block;
+            /*width: 64px;*/
+            /*height: 22px;*/
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            line-height: 60px;
+          }
+        .rightmodular .main .ulright li{
+            float: right;
+
+        }
+        .rightmodular .main .ulright li .face{
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .rightmodular .main .ulright li a{
+            /*margin-top:15px;*/
+            margin-right: 1px;
+            /*font-size: 18px;*/
+            /*line-height: 15px;*/
+            /*color: #333333;*/
+            /*!*line-height: 60px;*!*/
+        }
+        .rightmodular .main .ulright li .biaozhi{
+            margin-top: 12px;
+            margin-left: -40px;
+        }
+        .rightmodular .main ul li a{
+            disply:block;
+            width: 64px;
+            height: 22px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #333333;
+            line-height: 60px;
+        }
+
 
         .datainformation{
             width: 1497px;
@@ -190,7 +207,7 @@
     <div class="rightmodular" style=" float: left" >
         <div class="main">
             <img class="locn" src="images/rightlocn.png" alt="">
-            <ul>
+            <ul class="ulleft">
                 <li><a href="#">资源管理</a></li>
                 <li><a href="#">入库作业</a></li>
                 <li><a href="#">库内管理</a></li>
@@ -200,8 +217,8 @@
             </ul>
             <ul class="ulright">
                 <li><img class="face" src="images/face.png" alt=""></li>
-                <li><a href="#">九阳操作员</a></li>
-                <li><img src="images/biaozhi.png" alt=""></li>
+                <li><a class="jiuyang" href="#">九阳操作员</a></li>
+                <li><img class="biaozhi" src="images/biaozhi.png" alt=""></li>
             </ul>
             <div class="clear" style="clear: both;"></div>
 
