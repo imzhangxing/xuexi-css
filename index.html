@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ch-cmm">
+<html lang="ch-cmn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,388 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <style>
-        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,lo,input{
+        body,input{
             margin: 0;
             padding: 0;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul,ol{
-            list-style-type: none;
         }
         img,input{
             border: none;
         }
-        .left{
-            min-height: 802px;
-            /*width: 300px;*/
-            background: #424F63;
-        }
-        .leftheader{
-            width: 300px;
-            height: 60px;
-            /*background: #000;*/
-        }
-        .left .leftheader .leftheader_img{
-            width: 36px;
-            height: 37px;
-            /*background: orange;*/
-            line-height: 60px;
-            float: left;
-            margin-top: 12px;
-            margin-left: 12px;
+       .search{
+           width: 300px;
+           height: 60px;
+           background: #424F63;
+           /*padding-top:20px;*/
 
-        }
-        .leftheader_span{
-            width: 120px;
-            height: 28px;
-            background: white;
-            display: block;
-            float: left;
-            line-height: 60px;
-            margin-top: 22px;
-            margin-left: 12px;
-        }
-        .leftsearch{
-            width: 300px;
-            height: 60px;
-            /*background: #7f831b;*/
-        }
-        .leftsearch .leftseabor{
+       }
+         .search .text{
             width: 260px;
             height: 40px;
-            background: #354051;
-            line-height: 60px;
-            float: left;
-            display: inline-block;
-            margin-top: 9px;
-            margin-left: 20px;
-
+             background: #354051;
+             font-size: 14px;
+             margin-top: 9px;
+             margin-left:10px;
+             padding-left: 12px;
+             float: left;
         }
-        .leftsearch .leftseabor .leftseabor_span{
-            width: 36px;
-            height: 20px;
-            background: #999999;
-            display: block;
-            margin-top: 10px;
-            margin-left: 12px;
-            float: left;
-        }
-        .leftsearch .leftseabor .leftseabor_img{
-            width: 20.4px;
-            height: 20.4px;
-            /*width: 20.4em;*/
-            /*height: 20.4em;*/
-            background: white;
-            line-height: 60px;
+        .search .submit{
+            width: 40px;
+            height: 40px;
+            background: url("images/search_1.png") no-repeat right top;cursor:pointer;
             float: right;
-            margin-right: 13.5px;
-            margin-top: 7.3px;
         }
-        .leftlist{
-            width: 300px;
-            /*height: 600px;*/
-            /*background: #354051;*/
-            /*background: #000;*/
-        }
-        .leftlist .leli_kh{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            background: #354051;
-            display: block;
-        }
-        .leftlist .leli_ck{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#7f831b;*/
-            display: block;
-        }
-        .leftlist .leli_cwz{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#354051;*/
-            display: block;
-        }
-        .leftlist .leli_ckpmt{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#7f831b;*/
-            display: block;
-        }
-        .leftlist .leli_cksj{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#354051;*/
-            display: block;
-        }
-        .leftlist .leli_hp{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#7f831b;*/
-            display: block;
-        }
-        .leftlist .leli_dw{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#354051;*/
-            display: block;
-        }
-        .leftlist .leli_cksj{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#7f831b;*/
-            display: block;
-        }
-        .leftlist .leli_ckpmt{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#354051;*/
-            display: block;
-        }
-
-        .leftlist .leli_cksj{
-            width: 300px;
-            height: 60px;
-            line-height: 60px;
-            /*background:#7f831b;*/
-            display: block;
-        }
-
-        .leftlist ul li .lei_kh{
-            width: 22px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 19px;
-        }
-        .leftlist ul li .lei_ck{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_cwz{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_ckpmt{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_cksj{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_hp{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_dw{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_cksj{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_ckpmt{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lei_cksj{
-            width: 20px;
-            height: 22px;
-            background: white;
-            display: block;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_kh{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 19px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_ck{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_cwz{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_ckpmt{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_cksj{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_hp{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_dw{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_cksj{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li lep_ckpmt{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .leftlist ul li .lep_cksj{
-            width: 96px;
-            height: 22px;
-            background: white;
-            float: left;
-            margin-top: 20px;
-            margin-left: 20px;
-        }
-        .right{
-            height: 60px;
-            min-width: 1140px;
-            background: #fff4f6;
-        }
-        .right ul li .righti_tp{
-            width: 60px;
-            height: 57px;
-            background:orange;
-
-
-            /*border-right: 1px solid orange;*/
-        }
-
     </style>
 </head>
-<input type="text" placeholder="sadkjhfasjdjgks">
-    <div class="left" style="float: left;">
-        <div class="leftheader" style="line-height: 60px;">
-            <img class="leftheader_img" src="" alt="">
-             <span class="leftheader_span"></span>
-        </div>
-        <div class="leftsearch" style="line-height: 60px;">
-            <div class="leftseabor">
-                <span class="leftseabor_span"></span>
-                <img class="leftseabor_img" src="" alt="">
-            </div>
-        </div>
-        <div class="leftlist" style="line-height: 60;">
-            <ul>
-                <li class="leli_kh"><i class="lei_kh"></i><p class="lep_kh"></p></li>
-                <li class="leli_ck"><i class="lei_ck"></i><p class="lep_ck"></p></li>
-                <li class="leli_cwz"><i class="lei_cwz"></i><p class="lep_cwz"></p></li>
-                <li class="leli_ckpmt"><i class="lei_ckpmt"></i><p class="lep_ckpmt"></p></li>
-                <li class="leli_cksj"><i class="lei_cksj"></i><p class="lep_cksj"></p></li>
-                <li class="leli_hp"><i class="lei_hp"></i><p class="lep_hp"></p></li>
-                <li class="leli_dw"><i class="lei_dw"></i><p class="lep_dw"></p></li>
-                <li class="leli_cksj"><i class="lei_cwz"></i><p class="lep_cksj"></p></li>
-                <li class="leli_ckpmt"><i class="lei_ckpmt"></i><p class="lep_ckpmt"></p></li>
-                <li class="leli_cksj"><i class="lei_cksj"></i><p class="lep_cksj"></p></li>
-            </ul>
-        </div>
-    </div>
-    <div class="right" style="line-height: 60px">
-        <ul>
-            <li><i class="righti_tp" >222</i></li>
-            <li class="rightli_zy"><a class="righta_zy" href="#"></a></li>
-            <li class="rightli_rk"><a class="righta_rk" href="#"></a></li>
-            <li class="rightli_kn"><a class="righta_kn" href="#"></a></li>
-            <li class="rightli_bb"><a class="righta_bb" href="#"></a></li>
-            <li class="rightli_pd"><a class="righta_pd" href="#"></a></li>
-            <li class="rightli_gy"><a class="righta_gy" href="#"></a></li>
-        </ul>
-        
-    </div>
+<style>
+</style>
 <body>
+<div class="search">
+    <input type="text" class="text" placeholder="搜索..">
+    <input type="submit" class="submit" value="">
+</div>
 </body>
 </html>
