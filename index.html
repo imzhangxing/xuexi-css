@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ch-cmn">
+<html lang="ch-cmm">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,44 +7,108 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <style>
-        body,input{
+        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,lo,input{
             margin: 0;
             padding: 0;
         }
-        img,input{
+        a{
+            text-decoration: none;
+        }
+        ul,ol{
+            list-style-type: none;
+        }
+        input,img{
             border: none;
         }
-        .search{
+        .left{
+            min-height: 802px;
             width: 300px;
-            height: 60px;
-            background: #424F63;
-            /*padding-top:20px;*/
-
+            background: #424F63 ;
         }
-        .search .text{
-            width: 220px;
+        .left .lheader img{
+            width: 36px;
+            height: 37px;
+            background: orange;
+            margin-top: 12px;
+            margin-left: 12px;
+            float: left;
+            line-height: 60px;
+        }
+        .left .lheader span{
+            width: 120px;
+            height: 28px;
+            font-size: 20px;
+            margin-left: 12px;
+            line-height: 60px;
+            color: white;
+        }
+        .left .lsearch .text{
+            width: 208px;
             height: 40px;
             background: #354051;
-            font-size: 14px;
             margin-top: 9px;
-            margin-left:10px;
+            margin-left: 20px;
+            font-size:14px ;
             padding-left: 12px;
             float: left;
         }
-        .search .submit{
+        .left .lsearch .sub{
             width: 40px;
             height: 40px;
-            background:  white;
+            background: #354051;
+            float: left;
             margin-top:9px;
         }
+        .left .llist ul li{
+            height: 60px;
+            line-height: 60px;
+        }
+        .left .llist ul li p i{
+            width: 22px;
+            height: 22px;
+            background: white;
+            /*display: block;*/
+            display: inline-block;
+            float: left;
+            margin-top: 19px;
+            margin-left: 19px;
+            margin-right: 22px;
+        }
+        .left .llist ul li p{
+            width: 190px;
+            height: 22px;
+            font-size: 16px;
+            color: white;
+        }
+
     </style>
+    
 </head>
-<style>
-</style>
 <body>
-<div class="search">
-    <input type="text" class="text" placeholder="搜索..">
-    <input type="submit" class="submit" value="">
-</div>
+    <div class="left">
+        <div class="lheader" style="line-height: 60px;">
+            <img src="" alt="">
+           <span>仓储管理系统</span>
+        </div>
+        <div class="lsearch" style="line-height: 60px;">
+            <input type="text" class="text" placeholder="搜索..">
+            <input type="submit" class="sub" value="点击">
+            <div class="clear" style="clear: both"></div>
+        </div>
+       <div class="llist" style="line-height: 60px;">
+           <ul>
+               <li><p><i></i>客户配置管理</p></li>
+               <li><p><i></i>仓库配置管理</p></li>
+               <li><p><i></i>储位组配置管理</p></li>
+               <li><p><i></i>仓库平面图</p></li>
+               <li><p><i></i>出库单数据查询</p></li>
+               <li><p><i></i>货品配置</p></li>
+               <li><p><i></i>单位管理</p></li>
+               <li><p><i></i>出库单数据查询</p></li>
+               <li><p><i></i>仓库平面图</p></li>
+               <li><p><i></i>出库单数据查询</p></li>
+           </ul>
+       </div>
+    </div>
 </body>
 </html>
