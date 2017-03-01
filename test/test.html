@@ -1,180 +1,141 @@
-<html lang="ch-cmn"><head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>index</title>
     <style>
-        body, h1, h2, h3, h4, h5, h6, ul, li, ol, p, a, input {
+        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,lo,input{
             margin: 0;
             padding: 0;
         }
-        a {
+        a{
             text-decoration: none;
         }
-
-        ul, ol {
+        ul,ol{
             list-style-type: none;
         }
-
-        img, input {
+        input,img{
             border: none;
         }
-
-        .banleft {
-            width: 300px;
+        body{
+            background: #000;
+        }
+        .left{
             min-height: 802px;
-            background: #254459;
+            /*width: 300px;*/
+            background: #424F63 ;
         }
-
-        .banleft .divheader {
-            /*padding-top: 12px;*/
-            /*padding-left: 12px;*/
-            margin-top: 12px;
-
-        }
-
-        .banleft .divheader .img1 {
+        .left .lheader img{
             width: 36px;
             height: 37px;
             background: orange;
+            margin-top: 12px;
+            margin-left: 12px;
+            float: left;
             line-height: 60px;
         }
-
-        .banleft .divheader .span1 {
+        .left .lheader span{
             width: 120px;
             height: 28px;
-            /*background: blueviolet;*/
             font-size: 20px;
+            margin-left: 12px;
             line-height: 60px;
-            color: #fff;
+            color: white;
         }
-
-        .banleft .divnal {
-            width: 260px;
+        .left .lsearch .text{
+            width: 208px;
             height: 40px;
-            background: blue;
-            margin-left: 10px;
-            /*margin-top: 10px;*/
-        }
-
-        .banleft .divimp .c1 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c2 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c3 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c4 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft . divimp .c5 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c6 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c7 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c8 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp .c9 {
-            margin-top: 11px;
-            width: 300px;
-            height: 60px;
-            background: royalblue;
-        }
-
-        .banleft .divimp i {
-            width: 24px;
-            height: 24px;
-            background:orange;
+            background: #354051;
+            margin-top: 9px;
+            margin-left: 20px;
+            font-size:14px ;
+            padding-left: 12px;
             float: left;
-            margin-top: 18px;
-            margin-left: 15px;
-            display: inline-block;
-            margin-right: 10px;
         }
-        li{
+        .left .lsearch .sub{
+            width: 40px;
+            height: 40px;
+            background: #354051;
+            float: left;
+            margin-top:9px;
+        }
+        .left .llist ul li{
             height: 60px;
             line-height: 60px;
         }
+        .left .llist ul li p i{
+            width: 22px;
+            height: 22px;
+            background: white;
+            /*display: block;*/
+            display: inline-block;
+            float: left;
+            margin-top: 19px;
+            margin-left: 19px;
+            margin-right: 22px;
+        }
+        .left .llist ul li p{
+            width: 190px;
+            height: 22px;
+            font-size: 16px;
+            color: white;
+        }
+        .right{
+            min-width: 940px;
+            height: 60px;
+            background: white;
+        }
+        .right ul{
+            max-width: 1100px;
+            height: 60px;
+            /*background: red;*/
+            float: left;
+        }
+        .right ul li{
+            height: 60px;
+            width: 104px;
+            float: left;
+        }
+        .right ul li a{
+            width: 100px;
+            height: 60px;
+            color: #333333;
+            display: block;
+        }
+        .right ul li a:hover{
+            color: #4D5FA9;
+            border-bottom: 3px red solid;
+        }
+        .right ul li i{
+            width: 60px;
+            height: 57px;
+            /*background: blue;*/
+            display: block;
+            float: left;
+            margin-top: 2px;
+            border-right: 2px solid gainsboro;
+        }
+        .right .ul_right{
+            float: right;
+        }
+        .right .ul_right li i{
+            width: 50px;
+            height: 30px;
+            background: rebeccapurple;
+            margin-top: 10px;
+        }
+        .right .ul_right li a{
+            margin-top: 19px;
+        }
+        .other{
+            width: 780px;
+            height: 500px;
+            background:white;
+            float: right;
+            margin-top: 50px;
+            margin-right: 300px;
 
+        }
     </style>
+
 </head>
-<body>
-<div class="banleft">
-    <div class="divheader" style="
-    line-height: 60px;
-">
-        <img src="" class="img1" alt="" style="
-    margin-top: 13px;
-    margin-left: 15px;
-    float: left;
-">
-        <span class="span1" style="
-    float: left;
-">仓储管理系统</span>
-        <div class="clear" style="
-    clear: both;
-"></div>
-    </div>
-    <div class="divnal">
-    </div>
-    <div class="divimp">
-        <ul>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i>aaaaaaaaaaaaa</p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-            <li><p><i></i><span>bbbbbbbbbbbbbbb</span></p></li>
-        </ul>
-    </div>
-
-</div>
-
-
-
-</body></html>
