@@ -5,12 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>test</title>
+    <title>index</title>
     <style>
-        /*每次书写代码时都要添加上前四行注释*/
-        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,lo,input{
+        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,ol,input{
             margin: 0;
             padding: 0;
+        }
+
+        body{
+            background: grey;
         }
         a{
             text-decoration: none;
@@ -18,205 +21,178 @@
         ul,ol{
             list-style-type: none;
         }
-        input,img{
+        img,input{
             border: none;
         }
-        body{
-            background: #000;
-        }
-        .left{
-            /*设置最小高度。注意：设置完最小高度不必再设置宽度*/
+        /*
+        #424F63、#354051 #4D5FA9
+        客户配置管理、仓库配置管理、储位组配置管理、仓库平面图、出库端数据查询、
+        货品配置、单位管理、出库单数据查询、仓库平面图、出库端数据查询
+        */
+        .left {
             min-height: 802px;
             /*width: 300px;*/
-            background: #424F63 ;
+            background: #424F63;
+            float: left;
         }
         .left .lheader img{
             width: 36px;
             height: 37px;
             background: orange;
-            /*margin:外边距*/
+            line-height: 60px;
+            float: left;
             margin-top: 12px;
             margin-left: 12px;
-            float: left;
-            /*行高：一般美工给的行高为60px*/
-            line-height: 60px;
         }
         .left .lheader span{
             width: 120px;
             height: 28px;
             font-size: 20px;
+            color: white;
             margin-left: 12px;
             line-height: 60px;
-            color: white;
-        }
-        .left .lsearch .text{
-            width: 208px;
-            height: 40px;
-            background: #354051;
-            margin-top: 9px;
-            margin-left: 20px;
-            font-size:14px ;
-            padding-left: 12px;
             float: left;
         }
-
+        .left .lsearch .text{
+            width: 248px;
+            height: 40px;
+            background: #354051;
+            padding-left: 12px;
+            font-size: 14px;
+        }
         .left .llist ul li{
             width: 300px;
             height: 60px;
             line-height: 60px;
-            font-size: 16px;
-            color: white;
         }
-        .left .llist ul li a{
-            color: white;
-            /*切勿忘记给字体设置居中*/
-            text-align: center;
-        }
-        /*hover可以让其余的任意属性都可以使用*/
-        .left .llist ul li:hover{
-            color: #4D5FA9;
-            border-left: 5px red solid;
-        }
-        .left .llist ul li  i{
+        .left .llist ul li i{
             width: 22px;
             height: 22px;
             background: white;
-            /*
-            display:block/inline/inline-block的区别：
-            display:inline:它是一个字，没有高度。(比如：给字设置font-size让它高度变高)
-            inline:1000px;//该高度是没有效果的。
-            display:block;它有高度有宽度，相当于一个区域。
-            display:inline-block(两个都有，兼容性较差)
-            属于inline的标签有:span、a、img、i、em、Strong、常用性依次往下递减
-            */
-            /*display: block;*/
-            display: inline-block;
-            /*
-            使用浮动后要给样式清除浮动
-            <div class="clear" style="clear.both"></div>
-            style：行内样式
-            权重：style>id(#)>class(.)>标签本身。
-            */
+            display: block;
             float: left;
+            line-height: 60px;
             margin-top: 19px;
             margin-left: 19px;
-            margin-right: 22px;
         }
-
+        .left .llist ul li  a{
+            width: 112px;
+            height: 22px;
+            color: white;
+            margin-left: 19px;
+            font-size: 18px;
+        }
+        .left .llist ul a:hover{
+            color: #4D5FA9;
+        }
+        .left .llist ul   li:hover{
+            border-left: 5px solid rebeccapurple;
+        }
         .right{
-            min-width: 940px;
+            min-width: 1400px;
             height: 60px;
             background: white;
         }
         .right ul{
-            max-width: 1100px;
-            height: 60px;
-            /*background: red;*/
+            max-width: 650px;
             float: left;
         }
-        /*
-        如果使用列表
-        要给li设置width和height,让它把页面撑起来
-
-
-        */
-        .right ul li{
-            height: 60px;
-            width: 104px;
-            float: left;
-            line-height: 60px;
+        .right .ul_2{
+            float: right;
         }
-        .right ul li a{
-            width: 100px;
-            height: 60px;
-            color: #333333;
-            display: block;
-        }
-        .right ul li a:hover{
-            color: #4D5FA9;
-            border-top: 3px red solid;
+        .right .ul_2 i{
+            width: 15px;
+            height: 15px;
+            background: #000;
+            margin-top: 23px;
         }
 
         .right i{
             width: 60px;
             height: 57px;
-            /*background: blue;*/
-            display: block;
+            background: white;
             float: left;
-            margin-top: 2px;
-            /*大小 实线 颜色*/
-            border-right: 2px solid gainsboro;
+            margin-top: 1px;
+            border-right: 1px solid wheat;
         }
-        .right .ul_right{
-            float: right;
-        }
-        .right .ul_right li i{
-            width: 50px;
-            height: 30px;
-            background: rebeccapurple;
-            margin-top: 10px;
-        }
-        .right .ul_right li a{
+        .right li{
+            width: 100px;
+            height: 60px;
             line-height: 60px;
+            float: left;
+
+        }
+        .right li a{
             font-size: 18px;
+            color: #333333;
+            width: 100px;
+            height: 60px;
+            display: block;
             text-align: center;
         }
-        .other{
-            width: 780px;
-            height: 500px;
-            background:white;
-            float: right;
-            margin-top: 50px;
-            margin-right: 300px;
+        .right li a:hover{
+            color: #4D5FA9;
+            border-top: 5px solid rebeccapurple;
+        }
+        .right_color{
+        width: 1198px;
+        height: 60px;
+        background: #EEEEEE;
+        float: left;
+        }
+        .right_blue{
+        width: 1578px;
+        margin-left: 20px;
+        height: 170px;
+        background: blue;
+        margin-left: 12px;
         }
     </style>
-
 </head>
 <body>
-<div class="left" style="float: left;">
+<div class="left" >
     <div class="lheader" style="line-height: 60px;">
         <img src="" alt="">
         <span>仓储管理系统</span>
-    </div>
-    <div class="lsearch" style="line-height: 60px;">
-        <!--border-radius: 10px;//该代码是把input的方框变成圆角框-->
-        <!--style="outline: none：该代码是把input点击时的默认框取消-->
-        <input type="text" class="text" placeholder="搜索.." style="outline: none; border-radius: 10px;" >
-        <!--<input type="submit" class="sub" value="点击">-->
         <div class="clear" style="clear: both"></div>
+    </div>
+    <div class="lsearch" style="line-height: 60px">
+        <input type="text" class="text" placeholder="搜索.." style="border-radius: 10px; outline: none">
     </div>
     <div class="llist" style="line-height: 60px;">
         <ul>
-            <li><i></i><a href="javaScript:void(0)">客户配置管理</a></li>
-            <li><i></i><a href="javaScript:void(0)">仓库配置管理</a></li>
-            <li><i></i><a href="javaScript:void(0)">储位组配置管理</a></li>
-            <li><i></i><a href="javaScript:void(0)">仓库平面图</a></li>
-            <li><i></i><a href="javaScript:void(0)">出库单数据查询</a></li>
-            <li><i></i><a href="javaScript:void(0)">货品配置</a></li>
-            <li><i></i><a href="javaScript:void(0)">单位管理</a></li>
-            <li><i></i><a href="javaScript:void(0)">出库单数据查询</a></li>
-            <li><i></i><a href="javaScript:void(0)">仓库平面图</a></li>
-            <li><i></i><a href="javaScript:void(0)">出库单数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">储位组配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">货品配置</a></li>
+            <li><i></i><a href="javaScript:void (0)">单位管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
         </ul>
     </div>
+    <div class="clear" style="clear: both"></div>
 </div>
 <div class="right">
     <i></i>
     <ul>
-        <!--a href="javaScript:void(0)：路径引用的方式，不再使用#号-->
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">资源管理</a></li>
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">入库作业</a></li>
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">库内管理</a></li>
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">报表查询</a></li>
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">盘点作业</a></li>
-        <li style="line-height: 60px;font-size: 18px;"><a href="javaScript:void(0)">关于我们</a></li>
+        <li><a href="">资源管理</a></li>
+        <li><a href="">入库作业</a></li>
+        <li><a href="">库内管理</a></li>
+        <li><a href="">报表查询</a></li>
+        <li><a href="">盘点作业</a></li>
+        <li><a href="">关于我们</a></li>
+        <div class="clear" style="clear: both"></div>
     </ul>
-    <ul class="ul_right">
-        <li><i></i></li>
-        <li><a href="#">九阳操作员</a></li>
-        <li><i></i></li>
+    <ul class="ul_2">
+        <i></i>
+        <li><a href="">九阳操作员</a></li>
+        <i></i>
     </ul>
+    <div class="clear" style="clear: both"></div>
 </div>
-<!--<div class="other"></div>-->
 </body>
 </html>
