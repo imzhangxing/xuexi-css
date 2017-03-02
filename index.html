@@ -11,6 +11,9 @@
             margin: 0;
             padding: 0;
         }
+        body{
+            background: grey;
+        }
         a{
             text-decoration: none;
         }
@@ -20,8 +23,14 @@
         img,input{
             border: none;
         }
-        .left{
+        /*
+        #424F63、#354051 #4D5FA9
+        客户配置管理、仓库配置管理、储位组配置管理、仓库平面图、出库端数据查询、
+        货品配置、单位管理、出库单数据查询、仓库平面图、出库端数据查询
+        */
+        .left {
             min-height: 802px;
+            /*width: 300px;*/
             background: #424F63;
             float: left;
         }
@@ -29,10 +38,10 @@
             width: 36px;
             height: 37px;
             background: orange;
-            margin-top: 12px;
-            margin-left: 12px;
             line-height: 60px;
             float: left;
+            margin-top: 12px;
+            margin-left: 12px;
         }
         .left .lheader span{
             width: 120px;
@@ -41,128 +50,149 @@
             color: white;
             margin-left: 12px;
             line-height: 60px;
+            float: left;
+            text-align: center;
         }
         .left .lsearch .text{
-            width: 240px;
+            width: 248px;
             height: 40px;
             background: #354051;
-            padding-left: 20px;
-            font-size: 16px;
+            padding-left: 12px;
+            margin-left: 15px;
+            font-size: 14px;
         }
         .left .llist ul li{
+            position: relative;
             width: 300px;
             height: 60px;
+            line-height: 60px;
         }
         .left .llist ul li i{
             width: 22px;
             height: 22px;
             background: white;
+            display: block;
             float: left;
+            line-height: 60px;
             margin-top: 19px;
             margin-left: 19px;
         }
-        .left .llist ul li a{
-            width: 96px;
-            height: 22px;
-            color: white;
-            margin-left: 19px;
-            font-size: 18px;
-            text-align: center;
+        .left .llist ul li  a{
+            position: absolute;
+            margin-left: 50px;
+            font-size: 16px;
+            display: block;
+            width: 250px;
+            height: 60px;
+            color: #fff;
         }
-        .left .llist ul li a:hover{
-            color: #4D5FA9;
+        .left .llist ul a:hover{
+            color: #fff;
         }
-        .left .llist ul li:hover{
-            border-left: 5px solid red;
+        .left .llist ul   li:hover{
+            width: 295px;
+            background-color: #354051;
+            border-left: 5px solid rebeccapurple;
         }
         .right{
-            width: 1400px;
-            background: white;
+            min-width: 1198px;
+            background: #fff;
+
+            float: left;
         }
-        .right .ul_1{
-            min-width: 650px;
+        .right ul{
+            max-width: 650px;
+            float: left;
         }
+        .right .ul_2{
+            float: right;
+        }
+        .right .ul_2 i{
+            width: 15px;
+            height: 15px;
+            background: #000;
+            margin-top: 23px;
+        }
+
         .right i{
             width: 60px;
             height: 57px;
+            background: white;
             float: left;
             margin-top: 1px;
-            border-right: 1px silver solid;
+            border-right: 1px solid wheat;
         }
         .right li{
             width: 100px;
-            height: 60px;
+
             float: left;
-            margin-top: 19px;
-            margin-left: 20px;
+
         }
         .right li a{
-            display: block;
-            width: 100px;
             height: 60px;
-            font-size: 18px;
-            color: #0a1015;
+            line-height: 60px;
+            font-size: 16px;
+            color: #333333;
+            display: block;
             text-align: center;
         }
         .right li a:hover{
-            color: #0B6ED3;
-            border-top: 5px steelblue solid;
+            height: 55px;
+            color: #4D5FA9;
+            border-top: 5px solid rebeccapurple;
+            
         }
-        .right .ul_2 li i{
-            width: 20px;
-            height: 20px;
-            background: grey;
-            border-right: none;
-        }
-        .right .ul_2 li{
-            width: 20px;
-            margin-left: 70px;
-        }
-        .right .ul_2 li a{
-            width: 90px;
+        body{
+            background: #000;
         }
     </style>
 </head>
 <body>
-<div class="left">
+<div class="left" >
     <div class="lheader" style="line-height: 60px;">
         <img src="" alt="">
         <span>仓储管理系统</span>
+        <div class="clear" style="clear: both"></div>
     </div>
-    <div class="lsearch" style="line-height: 60px;">
-        <input type="text" class="text" placeholder="搜索.." style="border-radius: 10px;outline: none">
+    <div class="lsearch" style="line-height: 60px">
+        <input type="text" class="text" placeholder="搜索.." style="border-radius: 10px; outline: none">
     </div>
     <div class="llist" style="line-height: 60px;">
         <ul>
-            <li style="background:#354051;"><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">客户配资管理</a></li>
-
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">储位组配置管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">货品配置</a></li>
+            <li><i></i><a href="javaScript:void (0)">单位管理</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
+            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
         </ul>
     </div>
+    <div class="clear" style="clear: both"></div>
 </div>
 <div class="right">
     <i></i>
-    <ul class="ul_1">
-        <li><a href="javaScript">资源管理</a></li>
-        <li><a href="javaScript">资源管理</a></li>
-        <li><a href="javaScript">资源管理</a></li>
-        <li><a href="javaScript">资源管理</a></li>
-        <li><a href="javaScript">资源管理</a></li>
-        <li><a href="javaScript">资源管理</a></li>
+    <ul>
+        <li><a href="">资源管理</a></li>
+        <li><a href="">入库作业</a></li>
+        <li><a href="">库内管理</a></li>
+        <li><a href="">报表查询</a></li>
+        <li><a href="">盘点作业</a></li>
+        <li><a href="">关于我们</a></li>
+        <div class="clear" style="clear: both"></div>
     </ul>
     <ul class="ul_2">
-        <li><i></i></li>
-        <li><a href="javaScript">九阳操作员</a></li>
-        <li><i></i></li>
+        <i></i>
+        <li><a href="">九阳操作员</a></li>
+        <i></i>
     </ul>
+    <div class="clear" style="clear: both"></div>
 </div>
+
+
 </body>
 </html>
