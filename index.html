@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>仓库管理系统</title>
+    <title>仓储管理系统</title>
     <style>
         *{
             margin: 0;
@@ -17,10 +17,10 @@
         ul,ol{
             list-style-type: none;
         }
-        input,img{
-            border: none;
+        img,input{
+            border: 0px;
         }
-        .left {
+        .left{
             min-height: 802px;
             background: #424F63;
             float: left;
@@ -30,21 +30,21 @@
             height: 37px;
             background: orange;
             float: left;
+            line-height: 60px;
             margin-top: 12px;
             margin-left: 12px;
-            line-height: 60px;
-         }
+        }
         .left .lheader span{
             width: 120px;
             height: 28px;
-            margin-top: 22px;
-            margin-left: 12px;
-            line-height: 60px;
             font-size: 20px;
             color: white;
+            /*此时不用margin用line-height*/
+            /*margin-top: 12px;*/
+            line-height: 60px;
+            margin-left: 12px;
         }
-        .left .lsearch {
-            /*height: 60px;*/
+        .left .lsearch{
             line-height: 60px;
         }
         .left .lsearch .text{
@@ -52,7 +52,6 @@
             height: 40px;
             background: #354051;
             border-radius: 10px;
-            line-height: 60px;
             outline: none;
             padding-left: 12px;
             font-size: 14px;
@@ -69,7 +68,6 @@
             line-height: 60px;
             float: left;
             position: relative;
-
         }
         .left .llist li a{
             width: 240px;
@@ -81,62 +79,56 @@
             color: #fff;
             position: absolute;
             padding-left: 60px;
+
         }
         .left .llist li a:hover{
             background: #354051;
             width: 235px;
             border-left: 5px solid steelblue;
-            padding-left: 55px;
 
         }
         .left .llist li .clear{
             clear: both;
         }
         body{
-            background:  #EEEEEE;
+            background: grey;
         }
         .right{
-            min-width: 1198px;
-            height: 60px;
+            width: 1198px;
             background: white;
             float: left;
         }
-        .right li{
-            width: 105px;
-            float: left;
-            position: relative;
-            /*使用line-height让li往下*/
-            line-height: 60px;
-        }
-        .right li a{
-            width: 105px;
-            height: 60px;
-            color: #333333;
-            font-size: 16px;
-            text-align: center;
-            display: block;
-        }
-        .right li a:hover{
-            color: #4D5FA9;
-            border-top: 5px solid steelblue;
-        }
-
         .right i{
             width: 60px;
             height: 57px;
+            /*background: #000;*/
             float: left;
-            border-right:1px solid gainsboro;
             margin-top: 3px;
+            border-right:1px solid silver;
         }
-        .right .ul_2{
-            float: right;
+        .right ul li{
+            width: 100px;
+            height: 60px;
+            float: left;
+            position: relative;
+        }
+        .right ul li a {
+            font-size: 16px;
+            color: #333333;
+            line-height: 60px;
+            text-align: center;
+            position: absolute;
+        }
+        .right ul li a:hover{
+            color:  #4D5FA9;
+            border-top: 5px solid ;
         }
         .right .ul_2 li{
-           width: auto;
-            margin: 0 10px;
+            float: right;
         }
-        .right .ul_2 li a{
-            /*width: 80px;*/
+        .right .ul_2 li i{
+            width:auto;
+            margin: 0 10px;
         }
         .right .ul_2 li i{
             width: 40px;
@@ -146,15 +138,13 @@
             display: block;
             margin-top: 9px;
         }
-
-        .clear{
-            clear: both;
-        }
+       
+         
     </style>
 </head>
 <body>
 <div class="left">
-    <div class="lheader" >
+    <div class="lheader">
         <img src="" alt="">
         <span>仓储管理系统</span>
     </div>
@@ -162,25 +152,24 @@
         <input type="text" class="text" placeholder="搜索..">
     </div>
     <div class="llist">
-        <ul>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
-        </ul>
-
+      <ul>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+          <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+      </ul>
     </div>
 </div>
 <div class="right">
     <i></i>
     <ul>
-        <li><a href="javaScript:void (0)">资源管理</a><div class="clear"></div></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
         <li><a href="javaScript:void (0)">资源管理</a></li>
         <li><a href="javaScript:void (0)">资源管理</a></li>
         <li><a href="javaScript:void (0)">资源管理</a></li>
@@ -191,6 +180,7 @@
         <li><i></i></li>
         <li><a href="javaScript:void (0)">九阳操作员</a></li>
         <li><i></i></li>
+
     </ul>
 </div>
 </body>
