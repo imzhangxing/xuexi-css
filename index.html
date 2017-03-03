@@ -1,18 +1,15 @@
 <!doctype html>
-<html lang="ch-cmm">
+<html lang="zh-cmn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>index</title>
+    <title>仓库管理系统</title>
     <style>
-        body,h1,h2,h3,h4,h5,h6,a,p,ul,li,ol,input{
+        *{
             margin: 0;
             padding: 0;
-        }
-        body{
-            background: grey;
         }
         a{
             text-decoration: none;
@@ -20,17 +17,11 @@
         ul,ol{
             list-style-type: none;
         }
-        img,input{
+        input,img{
             border: none;
         }
-        /*
-        #424F63、#354051 #4D5FA9
-        客户配置管理、仓库配置管理、储位组配置管理、仓库平面图、出库端数据查询、
-        货品配置、单位管理、出库单数据查询、仓库平面图、出库端数据查询
-        */
         .left {
             min-height: 802px;
-            /*width: 300px;*/
             background: #424F63;
             float: left;
         }
@@ -38,161 +29,169 @@
             width: 36px;
             height: 37px;
             background: orange;
-            line-height: 60px;
             float: left;
             margin-top: 12px;
             margin-left: 12px;
-        }
+            line-height: 60px;
+         }
         .left .lheader span{
             width: 120px;
             height: 28px;
-            font-size: 20px;
-            color: white;
+            margin-top: 22px;
             margin-left: 12px;
             line-height: 60px;
-            float: left;
-            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        .left .lsearch {
+            /*height: 60px;*/
+            line-height: 60px;
         }
         .left .lsearch .text{
             width: 248px;
             height: 40px;
             background: #354051;
+            border-radius: 10px;
+            line-height: 60px;
+            outline: none;
             padding-left: 12px;
-            margin-left: 15px;
             font-size: 14px;
         }
-        .left .llist ul li{
-            position: relative;
+        .left .llist li{
             width: 300px;
-            height: 60px;
-            line-height: 60px;
+            background: #424F63;
         }
-        .left .llist ul li i{
-            width: 22px;
-            height: 22px;
+        .left .llist li i{
+            width: 60px;
+            height: 60px;
             background: white;
+            display: block;
+            line-height: 60px;
+            float: left;
+            position: relative;
+
+        }
+        .left .llist li a{
+            width: 240px;
+            height: 60px;
             display: block;
             float: left;
             line-height: 60px;
-            margin-top: 19px;
-            margin-left: 19px;
-        }
-        .left .llist ul li  a{
-            position: absolute;
-            margin-left: 50px;
             font-size: 16px;
-            display: block;
-            width: 250px;
-            height: 60px;
             color: #fff;
+            position: absolute;
+            padding-left: 60px;
         }
-        .left .llist ul a:hover{
-            color: #fff;
+        .left .llist li a:hover{
+            background: #354051;
+            width: 235px;
+            border-left: 5px solid steelblue;
+            padding-left: 55px;
+
         }
-        .left .llist ul   li:hover{
-            width: 295px;
-            background-color: #354051;
-            border-left: 5px solid rebeccapurple;
+        .left .llist li .clear{
+            clear: both;
+        }
+        body{
+            background:  #EEEEEE;
         }
         .right{
             min-width: 1198px;
-            background: #fff;
-
+            height: 60px;
+            background: white;
             float: left;
         }
-        .right ul{
-            max-width: 650px;
+        .right li{
+            width: 105px;
             float: left;
+            position: relative;
+            /*使用line-height让li往下*/
+            line-height: 60px;
         }
-        .right .ul_2{
-            float: right;
+        .right li a{
+            width: 105px;
+            height: 60px;
+            color: #333333;
+            font-size: 16px;
+            text-align: center;
+            display: block;
         }
-        .right .ul_2 i{
-            width: 15px;
-            height: 15px;
-            background: #000;
-            margin-top: 23px;
+        .right li a:hover{
+            color: #4D5FA9;
+            border-top: 5px solid steelblue;
         }
 
         .right i{
             width: 60px;
             height: 57px;
-            background: white;
             float: left;
-            margin-top: 1px;
-            border-right: 1px solid wheat;
+            border-right:1px solid gainsboro;
+            margin-top: 3px;
         }
-        .right li{
-            width: 100px;
-
-            float: left;
-
+        .right .ul_2{
+            float: right;
         }
-        .right li a{
-            height: 60px;
-            line-height: 60px;
-            font-size: 16px;
-            color: #333333;
-            display: block;
-            text-align: center;
+        .right .ul_2 li{
+           width: auto;
+            margin: 0 10px;
         }
-        .right li a:hover{
-            height: 55px;
-            color: #4D5FA9;
-            border-top: 5px solid rebeccapurple;
-            
+        .right .ul_2 li a{
+            /*width: 80px;*/
         }
-        body{
+        .right .ul_2 li i{
+            width: 40px;
+            height: 40px;
             background: #000;
+            float: none;
+            display: block;
+            margin-top: 9px;
+        }
+
+        .clear{
+            clear: both;
         }
     </style>
 </head>
 <body>
-<div class="left" >
-    <div class="lheader" style="line-height: 60px;">
+<div class="left">
+    <div class="lheader" >
         <img src="" alt="">
         <span>仓储管理系统</span>
-        <div class="clear" style="clear: both"></div>
     </div>
-    <div class="lsearch" style="line-height: 60px">
-        <input type="text" class="text" placeholder="搜索.." style="border-radius: 10px; outline: none">
+    <div class="lsearch">
+        <input type="text" class="text" placeholder="搜索..">
     </div>
-    <div class="llist" style="line-height: 60px;">
+    <div class="llist">
         <ul>
-            <li><i></i><a href="javaScript:void (0)">客户配置管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">仓库配置管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">储位组配置管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
-            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
-            <li><i></i><a href="javaScript:void (0)">货品配置</a></li>
-            <li><i></i><a href="javaScript:void (0)">单位管理</a></li>
-            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
-            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
-            <li><i></i><a href="javaScript:void (0)">仓库平面图</a></li>
-            <li><i></i><a href="javaScript:void (0)">出库端数据查询</a></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
+            <li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>
         </ul>
+
     </div>
-    <div class="clear" style="clear: both"></div>
 </div>
 <div class="right">
     <i></i>
     <ul>
-        <li><a href="">资源管理</a></li>
-        <li><a href="">入库作业</a></li>
-        <li><a href="">库内管理</a></li>
-        <li><a href="">报表查询</a></li>
-        <li><a href="">盘点作业</a></li>
-        <li><a href="">关于我们</a></li>
-        <div class="clear" style="clear: both"></div>
+        <li><a href="javaScript:void (0)">资源管理</a><div class="clear"></div></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
+        <li><a href="javaScript:void (0)">资源管理</a></li>
     </ul>
     <ul class="ul_2">
-        <i></i>
-        <li><a href="">九阳操作员</a></li>
-        <i></i>
+        <li><i></i></li>
+        <li><a href="javaScript:void (0)">九阳操作员</a></li>
+        <li><i></i></li>
     </ul>
-    <div class="clear" style="clear: both"></div>
 </div>
-
-
 </body>
 </html>
