@@ -161,9 +161,9 @@
             border-radius: 15px;
         }
       .main .m_box{
-          /*margin: 0 auto;*/
-          /*margin-top: 29px;*/
-          /*margin-left:65px;*/
+          margin: 0 auto;
+          margin-top: 29px;
+          margin-left:65px;
       }
       .main .m_box .inner{
           width: 1220px;
@@ -206,19 +206,17 @@
             float: left;
             background: white;
             line-height: 429px;
-            background: #000;
+            /*background: #000;*/
         }
         .main .m_box .inner .box_2 li img{
-            top: 0;
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
+            position: static;
+            display: block;
+            margin: 70px auto 0px;
         }
         .main .m_box .inner .box_2 li .szzr {
             width: 100%;
-            margin-top: 325px;
+            line-height: 50px;
+            margin-top: 30px;
         }
         .main .m_box .inner .box_2 li .szzr h6{
             font-size: 17px;
@@ -228,6 +226,7 @@
         .main .m_box .inner .box_2 li p{
             line-height: 20px;
             text-align: center;
+            color: gainsboro;
         }
         .main .m_box .inner .box_2 .header a{
             font-size: 18px;
@@ -236,12 +235,41 @@
             margin-left: 30px;
             line-height: 50px;
         }
-        .main .m_box .inner .box_2 li .szzr .price{
-            width: 100px;
-            margin-top: 300px;;
+        .main .m_box .inner .box_2 li .price {
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            top: 376px;
+            line-height: 1.2;
+            color: #d43f3a;
         }
+        .main .m_box .inner .box_2 li .input{
+            display: inline-block;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+            top: 115px;
+        }
+        .main .m_box .inner .box_2 li .check{
 
-
+        }
+        .main .m_box .inner .box_2 li  .price {
+            font-size: 14px;
+           font-family: normal;
+        }
+        .main .m_box .inner .box_2 li  .price  span{
+            font-size: 16px;
+        }
+        .main .m_box .inner .box_2 li p:hover{
+        }
+        /*.main .m_box .inner .box_3{*/
+            /*width: 918px;*/
+            /*height: 1220px;*/
+            /*bg*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -306,37 +334,38 @@
                <div class="header">
                   <a href="javaScript:void (0)">热门商品</a>
                </div>
-                <li><a href="javaScript:void(0) "></a>
-                    <img src="image/min_01.png" alt="">
+                <li>
+                    <img src="image/main_01.png" alt="">
                     <div class="szzr">
                         <h6>《深泽直人》</lt></h6>
                         <p>首次面向中国读者介绍其产品</p>
-                        <div class="price">
-                            <span>￥</span>
-                            <p>199.00</p>
-                        </div>
-
                     </div>
+                    <p class="price">
+                        <i>￥</i>
+                        <span><b>199.00</b></span>
+                    </p>
+
                 </li>
                 <li>
-                    <img src="image/min_01.png" alt="" style="
-    position: static;
-    display: block;
-    margin: 70px auto 0px;
-">
-                    <div class="szzr" style="
-    width: 100%;
-    margin-top: 30px;
-">
-                        <h6>《深泽直人》</h6>
-                        <p style="
-    text-align: center;
-">首次面向中国读者介绍其产品</p>
+                    <img src="image/mian_02.png" alt="">
+                    <div class="szzr">
+                        <h6>Smartisan M1/M1L 软胶保护套</h6>
+                        <p>TPU环保材质 细腻防滑 除油污</p>
                     </div>
+                    <div class="input">
+                        <input type="radio" class="check" >
+                        <input type="radio" class="check" >
+                    </div>
+
+                    <p class="price">
+                        <i>￥</i>
+                        <span><b>49.00</b></span>
+                    </p>
                 </li>
                 <li><a href="javaScript:void(0) "></a></li>
                 <li><a href="javaScript:void(0) "></a></li>
             </ul>
+            <ul class="box_3"></ul>
         </div>
     </div>
 </div>
