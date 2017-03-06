@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>官网在线商城</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>官网在线商城</title>
     <style>
         body{
             font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;
@@ -160,24 +160,26 @@
             overflow: hidden;
             border-radius: 15px;
         }
-      .main .m_box{
-          margin: 0 auto;
-          margin-top: 29px;
-          margin-left:65px;
-      }
-      .main .m_box .inner{
-          width: 1220px;
-          min-height: 2000px;
-          margin: 0 auto;
-      }
-        .main .m_box .inner .box_1{
+        .main .m_box{
+            margin: 0 auto;
+            margin-top: 29px;
+            /*margin-left:10px;*/
+        }
+        .main .m_box .inner{
+            width: 1220px;
+            min-height: 2000px;
+            margin: 0 auto;
+            /*background: wheat;*/
+        }
+        .main .m_box .inner .box_PopularCommodity{
             width: 1220px;
             height: 200px;
             background: slategray;
             margin-top: 35px;
             line-height: 35px;
+
         }
-        .main .m_box .box_1 li{
+        .main .m_box .box_PopularCommodity li{
             width: 303px;
             height: 200px;
             background: white;
@@ -185,20 +187,20 @@
             float: left;
             line-height:200px;
         }
-        .main .m_box .box_1 li .clear{
+        .main .m_box .box_PopularCommodity li .clear{
             clear: both;
         }
-        .main .m_box .inner .box_2{
+        .main .m_box .inner .box_OfficialSelection{
             line-height: 35px;
             margin-top: 35px;
         }
-        .main .m_box .inner .box_2 .header{
+        .main .m_box .inner .box_OfficialSelection .header{
             width: 1220px;
             height: 60px;
             border: 1px solid silver;
             background: whitesmoke;
         }
-        .main .m_box .inner .box_2 li {
+        .main .m_box .inner .box_OfficialSelection li {
             position: relative;
             width: 303px;
             height: 429px;
@@ -208,34 +210,34 @@
             line-height: 429px;
             /*background: #000;*/
         }
-        .main .m_box .inner .box_2 li img{
+        .main .m_box .inner .box_OfficialSelection li img{
             position: static;
             display: block;
             margin: 70px auto 0px;
         }
-        .main .m_box .inner .box_2 li .szzr {
+        .main .m_box .inner .box_OfficialSelection li .szzr {
             width: 100%;
             line-height: 50px;
             margin-top: 30px;
         }
-        .main .m_box .inner .box_2 li .szzr h6{
+        .main .m_box .inner .box_OfficialSelection li .szzr h6{
             font-size: 17px;
             line-height: 20px;
             text-align: center;
         }
-        .main .m_box .inner .box_2 li p{
+        .main .m_box .inner .box_OfficialSelection li p{
             line-height: 20px;
             text-align: center;
             color: gainsboro;
         }
-        .main .m_box .inner .box_2 .header a{
+        .main .m_box .inner .box_OfficialSelection .header a{
             font-size: 18px;
             height: 16px;
             color: #666;
             margin-left: 30px;
             line-height: 50px;
         }
-        .main .m_box .inner .box_2 li .price {
+        .main .m_box .inner .box_OfficialSelection li .price {
             display: inline-block;
             position: absolute;
             width: 100%;
@@ -245,7 +247,7 @@
             line-height: 1.2;
             color: #d43f3a;
         }
-        .main .m_box .inner .box_2 li .input{
+        .main .m_box .inner .box_OfficialSelection li .input{
             display: inline-block;
             position: absolute;
             width: 100%;
@@ -253,22 +255,22 @@
             text-align: center;
             top: 115px;
         }
-        .main .m_box .inner .box_2 li .check{
+        .main .m_box .inner .box_OfficialSelection li .check{
 
         }
-        .main .m_box .inner .box_2 li  .price {
+        .main .m_box .inner .box_OfficialSelection li  .price {
             font-size: 14px;
-           font-family: normal;
+            font-family: normal;
         }
-        .main .m_box .inner .box_2 li  .price  span{
+        .main .m_box .inner .box_OfficialSelection li  .price  span{
             font-size: 16px;
         }
-        .main .m_box .inner .box_2 li p:hover{
+        .main .m_box .inner .box_OfficialSelection li p:hover{
         }
         /*.main .m_box .inner .box_3{*/
-            /*width: 918px;*/
-            /*height: 1220px;*/
-            /*bg*/
+        /*width: 918px;*/
+        /*height: 1220px;*/
+        /*bg*/
         /*}*/
     </style>
 </head>
@@ -324,16 +326,16 @@
     </div>
     <div class="m_box">
         <div class="inner">
-            <ul class="box_1">
+            <ul class="box_PopularCommodity">
                 <li><i><a  href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i><div class="clear"></div></li>
             </ul>
-            <ul class="box_2">
-               <div class="header">
-                  <a href="javaScript:void (0)">热门商品</a>
-               </div>
+            <ul class="box_OfficialSelection">
+                <div class="header">
+                    <a href="javaScript:void (0)">热门商品</a>
+                </div>
                 <li>
                     <img src="image/main_01.png" alt="">
                     <div class="szzr">
