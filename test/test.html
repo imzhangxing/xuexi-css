@@ -7,91 +7,95 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>官网在线商城</title>
     <style>
-        /*body{*/
-            /*font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;*/
-            /*color: rgb(102, 102, 102);*/
-            /*font-size: 14px;*/
-        /*}*/
-        /**{*/
-            /*margin: 0;*/
-            /*padding: 0;*/
-        /*}*/
-        /*a{*/
-            /*text-decoration: none;*/
-        /*}*/
-        /*ul,ol{*/
-            /*list-style-type: none;*/
-        /*}*/
-        /*img,input{*/
-            /*border: none;*/
-        /*}*/
-        /*.header{*/
+        body{
+            font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;
+            color: rgb(102, 102, 102);
+            font-size: 14px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,ol{
+            list-style-type: none;
+        }
+        img,input{
+            border: none;
+        }
+        .header{
+            height: 100px;
+            background: #000;
+        }
+        .header .center{
+            width: 1220px;
             /*height: 100px;*/
-            /*background: #000;*/
-        /*}*/
-        /*.header .center{*/
-            /*width: 1220px;*/
-            /*!*height: 100px;*!*/
-            /*margin: 0 auto;*/
-            /*!*background: rebeccapurple;*!*/
-        /*}*/
-        /*.header .center .logo{*/
-            /*float: left;*/
-        /*}*/
-        /*.header .center .logo img{*/
-            /*width: 50px;*/
-            /*height: 50px;*/
-            /*margin-top: 25px;*/
-        /*}*/
-        /*.header .center .nav{*/
-            /*float: right;*/
-        /*}*/
-        /*.header .center .nav .navleft{*/
-            /*margin-top: 39px;*/
-            /*float: left;*/
-        /*}*/
-        /*.header .center .nav .navleft ul li{*/
-            /*float: left;*/
-        /*}*/
-        /*.header .center .nav .navleft ul li a{*/
-            /*font-size: 14px;*/
-            /*!*color:silver;*!*/
-            /*height: 28px;*/
-            /*padding: 0 20px;*/
-            /*line-height: 2.2px;*/
-        /*}*/
-        /*.header .center .nav .navleft ul li .ac{*/
-            /*color:white;*/
-        /*}*/
-        /*.header .center .nav .navleft ul li a:hover{*/
-            /*color:white;*/
-        /*}*/
-        /*.header .center .nav .navright{*/
-            /*width: 141px;*/
+            margin: 0 auto;
+            /*background: rebeccapurple;*/
+        }
+        .header .center .logo{
+            float: left;
+        }
+        .header .center .logo img{
+            width: 50px;
+            height: 50px;
+            margin-top: 25px;
+        }
+        .header .center .nav{
+            /*width: 820px;*/
             /*height: 67px;*/
-            /*float: right;*/
-        /*}*/
-        /*.header .center .nav .navright .border_ri{*/
-            /*float: left;*/
-            /*width: 1px;*/
-            /*height: 13px;*/
-            /*!*background: rgba(255,255,255,.12);*!*/
-            /*display: block;*/
-            /*margin-top: 44px;*/
-        /*}*/
-        /*.header .center .nav .navright .nav_button{*/
-            /*float: right;*/
-            /*width:100px;*/
-            /*height: 28px;*/
-            /*background:#181818;*/
-            /*color: whitesmoke;*/
-            /*border-radius: 5px;*/
-            /*outline: none;*/
-            /*font-size: 14px;*/
-            /*text-align: center;*/
-            /*margin-top: 33px;*/
-            /*border: 1px solid #2d2929;*/
-        /*}*/
+            /*!*background: rebeccapurple;*!*/
+            float: right;
+            /*line-height: 25px;*/
+        }
+        .header .center .nav .navleft{
+            margin-top: 39px;
+            float: left;
+        }
+        .header .center .nav .navleft ul li{
+            float: left;
+        }
+        .header .center .nav .navleft ul li a{
+            font-size: 14px;
+            color:silver;
+            height: 28px;
+            padding: 0 20px;
+            line-height: 2.2px;
+        }
+        .header .center .nav .navleft ul li .ac{
+            color:white;
+        }
+        .header .center .nav .navleft ul li a:hover{
+            color:white;
+        }
+        .header .center .nav .navright{
+            width: 141px;
+            height: 67px;
+            float: right;
+        }
+        .header .center .nav .navright .border_ri{
+            float: left;
+            width: 1px;
+            height: 13px;
+            background: rgba(255,255,255,.12);
+            display: block;
+            margin-top: 44px;
+        }
+        .header .center .nav .navright .nav_button{
+            float: right;
+            width:100px;
+            height: 28px;
+            background:#181818;
+            color: whitesmoke;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 33px;
+            border: 1px solid #2d2929;
+        }
         .main{
             min-height: 2000px;
             background: #ededed;
@@ -149,33 +153,31 @@
             width: 1222px;
             margin: 0 auto;
         }
-        /*.main .m_picture .mpic_inner img{*/
-            /*width: 1220px;*/
-            /*height: 500px;*/
-            /*background: #ff6d94;*/
-            /*overflow: hidden;*/
-            /*border-radius: 15px;*/
-        /*}*/
+        .main .m_picture .mpic_inner img{
+            width: 1220px;
+            height: 500px;
+            background: #ff6d94;
+            overflow: hidden;
+            border-radius: 15px;
+        }
         .main .m_box{
-            margin: 0 auto;
-            margin-top: 29px;
-            /*margin-left:10px;*/
+            /*margin: 0 auto;*/
+            /*margin-top: 29px;*/
+            /*margin-left:65px;*/
         }
         .main .m_box .inner{
             width: 1220px;
             min-height: 2000px;
             margin: 0 auto;
-            /*background: wheat;*/
         }
-        .main .m_box .inner .box_PopularCommodity{
+        .main .m_box .inner .box_1{
             width: 1220px;
             height: 200px;
-            /*background: slategray;*/
+            background: slategray;
             margin-top: 35px;
             line-height: 35px;
-
         }
-        .main .m_box .box_PopularCommodity li{
+        .main .m_box .box_1 li{
             width: 303px;
             height: 200px;
             background: white;
@@ -183,20 +185,20 @@
             float: left;
             line-height:200px;
         }
-        /*.main .m_box .box_PopularCommodity li .clear{*/
-            /*clear: both;*/
-        /*}*/
-        .main .m_box .inner .box_OfficialSelection{
+        .main .m_box .box_1 li .clear{
+            clear: both;
+        }
+        .main .m_box .inner .box_2{
             line-height: 35px;
             margin-top: 35px;
         }
-        /*.main .m_box .inner .box_OfficialSelection .header{*/
-            /*width: 1220px;*/
-            /*height: 60px;*/
-            /*border: 1px solid silver;*/
-            /*background: whitesmoke;*/
-        /*}*/
-        .main .m_box .inner .box_OfficialSelection li {
+        .main .m_box .inner .box_2 .header{
+            width: 1220px;
+            height: 60px;
+            border: 1px solid silver;
+            background: whitesmoke;
+        }
+        .main .m_box .inner .box_2 li {
             position: relative;
             width: 303px;
             height: 429px;
@@ -204,70 +206,42 @@
             float: left;
             background: white;
             line-height: 429px;
-            /*background: #000;*/
+            background: #000;
         }
-        .main .m_box .inner .box_OfficialSelection li img{
-            position: static;
-            display: block;
-            margin: 70px auto 0px;
+        .main .m_box .inner .box_2 li img{
+            top: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
         }
-        .main .m_box .inner .box_OfficialSelection li .szzr {
+        .main .m_box .inner .box_2 li .szzr {
             width: 100%;
-            line-height: 50px;
-            margin-top: 30px;
+            margin-top: 325px;
         }
-        .main .m_box .inner .box_OfficialSelection li .szzr h6{
+        .main .m_box .inner .box_2 li .szzr h6{
             font-size: 17px;
             line-height: 20px;
             text-align: center;
         }
-        .main .m_box .inner .box_OfficialSelection li p{
+        .main .m_box .inner .box_2 li p{
             line-height: 20px;
             text-align: center;
-            color: gainsboro;
         }
-        .main .m_box .inner .box_OfficialSelection .header a{
+        .main .m_box .inner .box_2 .header a{
             font-size: 18px;
             height: 16px;
             color: #666;
             margin-left: 30px;
             line-height: 50px;
         }
-        .main .m_box .inner .box_OfficialSelection li .price {
-            display: inline-block;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            text-align: center;
-            top: 376px;
-            line-height: 1.2;
-            color: #d43f3a;
+        .main .m_box .inner .box_2 li .szzr .price{
+            width: 100px;
+            margin-top: 300px;;
         }
-        .main .m_box .inner .box_OfficialSelection li .input{
-            display: inline-block;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            text-align: center;
-            top: 115px;
-        }
-        .main .m_box .inner .box_OfficialSelection li .check{
 
-        }
-        .main .m_box .inner .box_OfficialSelection li  .price {
-            font-size: 14px;
-            font-family: normal;
-        }
-        .main .m_box .inner .box_OfficialSelection li  .price  span{
-            font-size: 16px;
-        }
-        .main .m_box .inner .box_OfficialSelection li p:hover{
-        }
-        /*.main .m_box .inner .box_3{*/
-        /*width: 918px;*/
-        /*height: 1220px;*/
-        /*bg*/
-        /*}*/
+
     </style>
 </head>
 <body>
@@ -322,48 +296,47 @@
     </div>
     <div class="m_box">
         <div class="inner">
-            <ul class="box_PopularCommodity">
+            <ul class="box_1">
                 <li><i><a  href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i></li>
                 <li><i><a href="javaScript:void(0) "></a></i><div class="clear"></div></li>
             </ul>
-            <ul class="box_OfficialSelection">
+            <ul class="box_2">
                 <div class="header">
                     <a href="javaScript:void (0)">热门商品</a>
                 </div>
-                <li>
-                    <img src="image/main_01.png" alt="">
+                <li><a href="javaScript:void(0) "></a>
+                    <img src="image/min_01.png" alt="">
                     <div class="szzr">
                         <h6>《深泽直人》</lt></h6>
                         <p>首次面向中国读者介绍其产品</p>
-                    </div>
-                    <p class="price">
-                        <i>￥</i>
-                        <span><b>199.00</b></span>
-                    </p>
+                        <div class="price">
+                            <span>￥</span>
+                            <a>199.00</a>
+                        </div>
 
+                    </div>
                 </li>
                 <li>
-                    <img src="image/mian_02.png" alt="">
-                    <div class="szzr">
-                        <h6>Smartisan M1/M1L 软胶保护套</h6>
-                        <p>TPU环保材质 细腻防滑 除油污</p>
+                    <img src="image/min_01.png" alt="" style="
+    position: static;
+    display: block;
+    margin: 70px auto 0px;
+">
+                    <div class="szzr" style="
+    width: 100%;
+    margin-top: 30px;
+">
+                        <h6>《深泽直人》</h6>
+                        <p style="
+    text-align: center;
+">首次面向中国读者介绍其产品</p>
                     </div>
-                    <div class="input">
-                        <input type="radio" class="check" >
-                        <input type="radio" class="check" >
-                    </div>
-
-                    <p class="price">
-                        <i>￥</i>
-                        <span><b>49.00</b></span>
-                    </p>
                 </li>
                 <li><a href="javaScript:void(0) "></a></li>
                 <li><a href="javaScript:void(0) "></a></li>
             </ul>
-            <ul class="box_3"></ul>
         </div>
     </div>
 </div>

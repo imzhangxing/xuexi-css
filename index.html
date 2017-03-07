@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="ch-cmn">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,6 +13,7 @@
         body {
             background: #e3e6f5;
         }
+
         body {
             font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;
             color: rgb(102, 102, 102);
@@ -152,10 +155,12 @@
             background: #000;
             margin: 0 4px;
         }
-        .main .inner .mian-header .mh-div .img_left{
+
+        .main .inner .mian-header .mh-div .img_left {
             float: left;
         }
-        .main .inner .mian-header .mh-div .img_right{
+
+        .main .inner .mian-header .mh-div .img_right {
             float: right;
         }
 
@@ -172,10 +177,14 @@
             width: 1220px;
             height: 500px;
             background: #ff0d70;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-picture {
             margin-top: 35px;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-picture .picture li {
@@ -186,12 +195,16 @@
             border: 1px solid silver;
         }
 
+        /*热门商品热门商品热门商品热门商品热门商品热门商品热门商品热门商品热门商品*/
         .main .inner .main-PopularCommodity {
             margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-PopularCommodity .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
@@ -206,12 +219,50 @@
             border: 1px solid silver;
         }
 
+        .main .inner .main-PopularCommodity .PopularCommodity li img {
+            margin: 80px 80px 60px;
+        }
+
+        .main .inner .main-PopularCommodity .PopularCommodity li h3 {
+            margin-top: -30px;
+            text-align: center;
+        }
+
+        .main .inner .main-PopularCommodity .PopularCommodity li p {
+            text-align: center;
+            font-size: 12px;
+            color: #7f7b89;
+            margin-top: 5px;
+        }
+
+        .main .inner .main-PopularCommodity .PopularCommodity li .price {
+            text-align: center;
+        }
+
+        /*.main .inner .main-PopularCommodity .PopularCommodity li .price p{*/
+        /*color: #dc5641;*/
+        /*margin: 30px;*/
+        /*!*float: left;*!*/
+        /*!*margin-left:60px;*!*/
+
+        /*}*/
+        /*.main .inner .main-PopularCommodity .PopularCommodity li .price a{*/
+        /*color: #dc5641;*/
+        /*!*font-size: 18px;*!*/
+        /*!*display: block;*!*/
+        /*!*line-height:90px;*!*/
+
+        /*}*/
+
         .main .inner .main-OfficialActuarial {
             margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-OfficialActuarial .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
@@ -237,10 +288,14 @@
 
         .main .inner .main-BrandSelection {
             margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            border-radius: 10px;
+
         }
 
         .main .inner .main-BrandSelection .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
@@ -266,10 +321,13 @@
 
         .main .inner .main-ScienceTechnology {
             margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-ScienceTechnology .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
@@ -286,10 +344,13 @@
 
         .main .inner .main-HammerApplication {
             margin-top: 35px;
+            border-radius: 5px;
+            overflow: hidden;
+            border-radius: 10px;
         }
 
         .main .inner .main-HammerApplication .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
@@ -306,14 +367,18 @@
 
         .main .inner .main-ForumSelection {
             margin-top: 35px;
+            overflow: hidden;
+            border-radius: 10px;
         }
+
         .main .inner .main-ForumSelection .title {
-            width: 1218px;
+            width: 1188px;
             height: 60px;
             line-height: 60px;
             border: 1px silver solid;
             background: white;
         }
+
         .main .inner .main-ForumSelection .ForumSelection li {
             float: left;
             width: 303px;
@@ -323,239 +388,164 @@
         }
 
         .footer {
-            background: #fafafa;;
+            background: #fafafa;
+            border-top: 1px solid #e6e6e6;
             margin-top: 75px;
-            border-top: 1px solid #d5c3e6;
+            /*background: #000;*/
         }
+
         .footer .inner {
             width: 1220px;
-            /*background: wheat;*/
             margin: 0 auto;
-            height: 500px;
+            /*background: #000;*/
         }
-        .footer .inner .info{
+
+        .footer .inner .info {
             height: 100px;
-            padding: 90px 0 32px;
+            padding: 100px 0 32px;
             border-bottom: 1px solid #e6e6e6;
+        }
+
+        .footer .inner .info .info-center {
+            height: 100%;
+            /*background: royalblue;*/
             position: relative;
         }
-        .footer .inner .info dl{
-            float: left;
-            padding: 0 20px;
-            line-height: 25px;
+
+        .footer .inner .info .info-center dl {
+            width: 100px;
             float: left;
         }
-        .footer .inner .info dl a{
+
+        .footer .inner .info .info-center dl dt dd {
+            margin-top: 30px;
+        }
+
+        .footer .inner .info .info-center dl a {
             color: #969696;
-            font-size: 14px;
-        }  .footer .inner .info dt{
-            color: #646464;
-            font-size: 12px;
+            line-height: 27px;
         }
-        .footer .inner .info dl a:hover{
-            color: royalblue;
-        }
-        .footer .inner .info .foot_tel{
+
+        .footer .inner .info .info-center .center-right {
             float: right;
         }
-        .footer .inner .info .foot_tel p{
-            color: #dccecd;
+
+        .footer .inner .info .info-center .center-right .tel {
+            font-size: 30px;
+            color: #646464;
         }
-        .footer .inner .info .foot_tel button{
+
+        .footer .inner .info .info-center .center-right p {
+            font-size: 12px;
+            color: #c3c3c3;
+            margin-top: 5px;
+        }
+
+        .footer .inner .info .info-center .center-right button {
             width: 130px;
             height: 34px;
-            background: #fcfcfc;
-            border-radius: 5px;
+            float: right;
+            text-align: center;
+            color: #5079d9;
             border: 1px solid #dcdcdc;
-            padding: 0 0 0 26px;
+            border-radius: 5px;
             margin-top: 8px;
-            text-align: left;
+            background: white;
+        }
+
+        .footer .inner .bottom {
+            /*background: rebeccapurple;*/
+            color: #434d55;
+            font-size: 12px;
+            padding: 40px 0;
+        }
+
+        .footer .inner .bottom .bot-center {
+            /*height: 15px;*/
+            /*background: royalblue;*/
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft h4 {
+            float: left;
+            height: 15px;
+            line-height: 15px;
+            color: #757575;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft h5 {
+            padding: 0 6px;
+            float: left;
+            height: 15px;
+            line-height: 15px;
+            color: #757575;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft .privacy {
+            float: left;
+            margin: 0 0 0 12px;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft .divright {
             float: right;
         }
-        .footer .inner .info .foot_tel button img{
+
+        .footer .inner .bottom .bot-center .bot-cenleft .divright img {
             width: 10px;
             height: 10px;
-            background: blue;
+            background: red;
+            float: left;
+            margin-top: 3px;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft .divright p {
+            float: right;
+            margin-left: 5px;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft .privacy li {
+            float: left;
+            line-height: 12px;
+            padding: 1px 10px 0;
+            border-left: 1px solid #ccc;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenleft .privacy li a {
+            /*color: #bdbdbd;*/
+            color: #406dd6;
+            font-size: 12px;
+            height: 12px;
+            line-height: 1;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenright {
+            float: left;
+            margin-top: 5px;
+            margin-left: -10px;
+        }
+
+        .footer .inner .bottom .bot-center .bot-cenright a {
+            padding: 0 10px;
+            color: #bdbdbd;
+            font-size: 12px;
+            height: 12px;
+            line-height: 1;
+        }
+
+        .title {
+            background: #fafafa;
+            line-height: 60px;
+            font-size: 18px;
+            color: #666;
+            position: relative;
+            display: block;
+            font-weight: 400;
+            /*margin-left: 30px*/
+            padding-left: 30px;
         }
     </style>
-    <style>
-        /*.main .m_header{*/
-        /*height: 90px;*/
-        /*}*/
-        /*.main .m_header .m_center{*/
-        /*width: 1220px;*/
-        /*margin: 0 auto;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list{*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list ul{*/
-        /*margin-left: 3px;*/
-        /*float: left;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list ul li{*/
-        /*line-height: 85px;*/
-        /*float: left;*/
-        /*margin:0 21px;*/
-
-        /*}*/
-        /*.main .m_header .m_center .mc_list ul li a{*/
-        /*font-size: 14px;*/
-        /*height: 16px;*/
-        /*color: #666;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list ul li .ac{*/
-        /*color: #666;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list ul li a:hover{*/
-        /*color: #5079d9;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list .gwc{*/
-        /*float: right;*/
-        /*margin-top: 25px;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list .gwc img{*/
-        /*width: 20px;*/
-        /*height: 20px;*/
-        /*background: wheat;*/
-        /*margin: 0 10px;*/
-        /*!*margin-top: 3px;*!*/
-        /*display: inline;*/
-        /*line-height: 3px;*/
-        /*}*/
-        /*.main .m_header .m_center .mc_list .gwc a{*/
-        /*font-size: 14px;*/
-        /*height: 16px;*/
-        /*color: #666;*/
-        /*display: inline;*/
-        /*}*/
-        /*.main .m_picture .mpic_inner{*/
-        /*width: 1222px;*/
-        /*margin: 0 auto;*/
-        /*}*/
-        /*.main .m_picture .mpic_inner img{*/
-        /*width: 1220px;*/
-        /*height: 500px;*/
-        /*background: #ff6d94;*/
-        /*overflow: hidden;*/
-        /*border-radius: 15px;*/
-        /*}*/
-        /*.main .m_box{*/
-        /*margin: 0 auto;*/
-        /*margin-top: 29px;*/
-        /*!*margin-left:10px;*!*/
-        /*}*/
-        /*.main .m_box .inner{*/
-        /*width: 1220px;*/
-        /*min-height: 2000px;*/
-        /*margin: 0 auto;*/
-        /*!*background: wheat;*!*/
-        /*}*/
-        /*.main .m_box .inner .box_up{*/
-        /*width: 1220px;*/
-        /*height: 200px;*/
-        /*background: slategray;*/
-        /*margin-top: 35px;*/
-        /*line-height: 35px;*/
-
-        /*}*/
-        /*.main .m_box .box_up li{*/
-        /*width: 303px;*/
-        /*height: 200px;*/
-        /*background: white;*/
-        /*border: 1px solid silver;*/
-        /*float: left;*/
-        /*line-height:200px;*/
-        /*}*/
-        /*.main .m_box .box_up li .clear{*/
-        /*clear: both;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity{*/
-        /*line-height: 35px;*/
-        /*margin-top: 35px;*/
-
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity .header{*/
-        /*width: 1220px;*/
-        /*height: 60px;*/
-        /*border: 1px solid silver;*/
-        /*background: whitesmoke;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li {*/
-        /*position: relative;*/
-        /*width: 303px;*/
-        /*height: 429px;*/
-        /*border: 1px solid silver;*/
-        /*float: left;*/
-        /*background: white;*/
-        /*line-height: 529px;*/
-        /*!*background: #000;*!*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li img{*/
-        /*position: static;*/
-        /*display: block;*/
-        /*margin: 70px auto 0px;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li .szzr {*/
-        /*width: 100%;*/
-        /*line-height: 50px;*/
-        /*margin-top: 30px;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li .szzr h6{*/
-        /*font-size: 17px;*/
-        /*line-height: 20px;*/
-        /*text-align: center;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li p{*/
-        /*line-height: 20px;*/
-        /*text-align: center;*/
-        /*color: gainsboro;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity .header a{*/
-        /*font-size: 18px;*/
-        /*height: 16px;*/
-        /*color: #666;*/
-        /*margin-left: 30px;*/
-        /*line-height: 50px;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li .price {*/
-        /*display: inline-block;*/
-        /*position: absolute;*/
-        /*width: 100%;*/
-        /*left: 0;*/
-        /*text-align: center;*/
-        /*top: 376px;*/
-        /*line-height: 1.2;*/
-        /*color: #d43f3a;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li .input{*/
-        /*position: absolute;*/
-        /*width: 100%;*/
-        /*!*display: inline-block;*!*/
-        /*line-height: 5px;*/
-        /*margin-top: 30px;*/
-        /*text-align: center;*/
-        /*}*/
-
-        /*.main .m_box .inner .box_PopularCommodity li .check{*/
-        /*width: 15px;*/
-        /*height: 15px;*/
-        /*!*line-height: 20px;*!*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li  .price {*/
-        /*font-size: 14px;*/
-        /*font-family: normal;*/
-        /*}*/
-        /*.main .m_box .inner .box_PopularCommodity li  .price  span{*/
-        /*font-size: 16px;*/
-        /*}*/
-        /*.main .m_box .inner .box_OfficialSelection {*/
-        /*width: 1220px;*/
-        /*height: 500px;*/
-        /*background: #000;*/
-        /*margin-top: 35px;*/
-        /*}*/
-    </style>
 </head>
+
+
 <body>
 <div class="header">
     <div class="inner">
@@ -623,7 +613,15 @@
         <div class="main-PopularCommodity">
             <div class="title">热门商品</div>
             <ul class="PopularCommodity">
-                <li><i></i></li>
+                <li>
+                    <img src="image/main_01.png" alt="">
+                    <h3>《深泽直人》</h3>
+                    <p>首次面向中国读者介绍其产品</p>
+                    <!--<div class="price">-->
+                    <!--<p>￥</p>-->
+                    <!--<a href="javaScript:void (0)">199.00</b></a>-->
+                    <!--</div>-->
+                </li>
                 <li><i></i></li>
                 <li><i></i></li>
                 <li><i></i></li>
@@ -669,8 +667,6 @@
                 <div class="clear"></div>
             </ul>
         </div>
-
-
         <!--锤子应用-->
         <div class="main-HammerApplication">
             <div class="title">锤子应用</div>
@@ -698,56 +694,94 @@
 <div class="footer">
     <div class="inner">
         <div class="info">
-            <dl class="foot_order">
-                <dt>订单服务</dt>
-                <dd><a href="javaScript:void (0)">购买指南</a></dd>
-                <dt><a href="javaScript:void (0)">支付方式 </a></dt>
-                <dt><a href="javaScript:void (0)">送货政策</a></dt>
-            </dl>
-            <dl>
-                <dt>服务支持</dt>
-                <dd><a href="javaScript:void (0)">售后服务</a></dd>
-                <dt><a href="javaScript:void (0)">维修门店 </a></dt>
-                <dt><a href="javaScript:void (0)">零售门店</a></dt>
-            </dl>
-            <dl>
-                <dt>自动服务</dt>
-                <dd><a href="javaScript:void (0)">热点咨询</a></dd>
-                <dt><a href="javaScript:void (0)">预约购买 </a></dt>
-                <dt><a href="javaScript:void (0)">订单物流</a></dt>
-            </dl>
-            <dl>
-                <dt>媒体中心</dt>
-                <dd><a href="javaScript:void (0)">新闻动态</a></dd>
-                <dt><a href="javaScript:void (0)">官方视频 </a></dt>
-                <dt><a href="javaScript:void (0)">图频资源</a></dt>
-            </dl>
-            <dl>
-            <dt>关于公司</dt>
-            <dd><a href="javaScript:void (0)">公司简介</a></dd>
-            <dt><a href="javaScript:void (0)">加入我们 </a></dt>
-            <dt><a href="javaScript:void (0)">联系我们</a></dt>
-        </dl>
-            <dl>
-                <dt>关注我们</dt>
-                <dd><a href="javaScript:void (0)">新浪微博</a></dd>
-                <dt><a href="javaScript:void (0)">官方微信 </a></dt>
-                <dt><a href="javaScript:void (0)">官方贴吧</a></dt>
-            </dl>
+            <div class="info-center">
+                <dl>
+                    <dt>订单服务</dt>
+                    <dd><a href="javaScript:void (0)">购买指南</a></dd>
+                    <dd><a href="javaScript:void (0)">支付方式 </a></dd>
+                    <dd><a href="javaScript:void (0)">送货政策</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt>服务支持</dt>
+                    <dd><a href="javaScript:void (0)">售后服务</a></dd>
+                    <dd><a href="javaScript:void (0)">维修门店 </a></dd>
+                    <dd><a href="javaScript:void (0)">零售门店</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt>自动服务</dt>
+                    <dd><a href="javaScript:void (0)">热点咨询</a></dd>
+                    <dd><a href="javaScript:void (0)">预约购买 </a></dd>
+                    <dd><a href="javaScript:void (0)">订单物流</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt>媒体中心</dt>
+                    <dd><a href="javaScript:void (0)">新闻动态</a></dd>
+                    <dd><a href="javaScript:void (0)">官方视频 </a></dd>
+                    <dd><a href="javaScript:void (0)">图频资源</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt>关于公司</dt>
+                    <dd><a href="javaScript:void (0)">公司简介</a></dd>
+                    <dd><a href="javaScript:void (0)">加入我们 </a></dd>
+                    <dd><a href="javaScript:void (0)">联系我们</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="javaScript:void (0)">新浪微博</a></dd>
+                    <dd><a href="javaScript:void (0)">官方微信 </a></dd>
+                    <dd><a href="javaScript:void (0)">官方贴吧</a></dd>
+                    <div class="clear"></div>
+                </dl>
+                <div class="center-right">
+                    <a class="tel" href="">400-619-0909</a>
+                    <p>周一至周日 9:00-18:00（仅收市话费)</p>
+                    <button><a href="javaScript:void(0) ">在线帮助</a></button>
+                </div>
+
+            </div>
             <div class="foot_tel">
-                <h1>400-619-0909</h1>
-                <p>周一至周日 9:00-18:00（仅收市话费）</p>
-                <button>
-                    <img  src="" alt="">
-                    <a href="javaScript:void (0)">在线帮助</a>
-                </button>
+                <!--<a class="tel" href="javaScript:void(0)">400-619-0909</a><br><br><br>-->
+                <!--<p>周一至周日 9:00-18:00（仅收市话费）</p>-->
+                <!--<button>-->
+                <!--<img src="" alt="">-->
+                <!--<a href="javaScript:void (0)">在线帮助</a>-->
+                <!--</button>-->
             </div>
         </div>
+        <div class="bottom">
+            <div class="bot-center">
+                <div class="bot-cenleft">
+                    <h4>Copyright © 2017, Smartisan Digital Co., Ltd. All Rights Reserved.</h4>
+                    <h5>北京锤子数码科技有限公司</h5>
+                    <ul class="privacy">
+                        <li><a href="javaScript:void (0)">法律声明</a></li>
+                        <li><a href="javaScript:void (0)">隐私条款</a></li>
+                        <li><a href="javaScript:void (0)">开发者中心</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="divright">
+                        <img src="" alt="">
+                        <p>中文</p>
+                    </div>
 
+                    <div class="clear"></div>
+                </div>
+                <div class="bot-cenright">
+                    <a href="javaScript:void (0)">京ICP备14041720号-1</a>
+                    <a href="javaScript:void (0)">京ICP证140622号</a>
+                    <a href="javaScript:void (0)">京公网安备11010502025474</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-</div>
 </div>
 </body>
+
+
+
 </html>
