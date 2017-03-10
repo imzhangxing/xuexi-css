@@ -1,787 +1,203 @@
 <!doctype html>
-<html lang="ch-cmn">
-
-
+<html lang="zh-cmn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>官网在线商城</title>
+    <title>仓库管理系统</title>
     <style>
-        /*两个img和a标签让其居中，让图片一个向左一个向右，设置linheight*/
-        body {
-            background: #e3e6f5;
-        }
-
-        body {
-            font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Microsoft Yahei", 微软雅黑, STHeiti, 华文细黑, sans-serif;
-            color: rgb(102, 102, 102);
-            font-size: 14px;
-        }
-
-        * {
+        *{
             margin: 0;
             padding: 0;
         }
-
-        a {
+        a{
             text-decoration: none;
         }
-
-        ul, ol {
+        ul,ol{
             list-style-type: none;
         }
-
-        img, input {
+        input,img{
             border: none;
         }
+        .left {
+            background: #424F63;
+            float: left;
+        }
+        .left .header i{
+            width: 60px;
+            height: 60px;
+            background: orange;
+            display: block;
+            float: left;
+            /*float: left;*/
+            /*margin-top: 12px;*/
+            /*margin-left: 12px;*/
+            /*line-height: 60px;*/
+        }
+        .left .header span{
+            float: right;
+            /*width: 120px;*/
+            /*height: 28px;*/
+            /*margin-top: 22px;*/
+            margin-left: 12px;
+            line-height: 60px;
+            font-size: 20px;
+            color: white;
+        }
+        .left .search {
+            /*height: 60px;*/
+            line-height: 60px;
+        }
+        .left .search .text{
+            width: 248px;
+            height: 40px;
+            background: #354051;
+            border-radius: 2px;
+            /*line-height: 60px;*/
+            outline: none;
+            padding-left: 12px;
+            font-size: 14px;
+        }
+        .left .llist li{
+            width: 300px;
+            background: #424F63;
+        }
+        .left .llist li i{
+            width: 60px;
+            height: 60px;
+            background: white;
+            display: block;
+            line-height: 60px;
+            float: left;
+            position: relative;
 
-        .clear {
+        }
+        .left .llist li a{
+            width: 240px;
+            height: 60px;
+            display: block;
+            float: left;
+            line-height: 60px;
+            font-size: 16px;
+            color: #fff;
+            position: absolute;
+            padding-left: 60px;
+        }
+        .left .llist li a:hover{
+            background: #354051;
+            width: 235px;
+            border-left: 5px solid steelblue;
+            padding-left: 55px;
+
+        }
+        .left .llist li .clear{
             clear: both;
         }
-
-        .header {
-            height: 100px;
-            background: #000;
+        body{
+            background:  #EEEEEE;
         }
-
-        .header .inner {
-            width: 1220px;
-            min-height: 100px;
-            margin: 0 auto;
-        }
-
-        .header .inner .logo {
-            float: left;
-        }
-
-        .header .inner .logo img {
-            float: left;
-            margin-top: 25px;
-        }
-
-        .header .inner .nav {
-            float: right;
-        }
-
-        .header .inner .nav .nav-main {
-            margin-top: 36px;
-            float: left;
-        }
-
-        .header .inner .nav .nav-main li {
-            float: left;
-        }
-
-        .header .inner .nav .nav-main li a {
-            height: 28px;
-            font-size: 14px;
-            padding: 0 20px;
-            color: grey;
-        }
-
-        .header .inner .nav .nav-main li a:hover {
-            color: #fff;
-        }
-
-        .header .inner .nav .nav-main li .ac {
-            color: #fff;
-        }
-
-        .header .inner .nav .nav-panel {
-            float: right;
-        }
-
-        .header .inner .nav .nav-panel .line {
-            float: left;
-            position: absolute;
-            top: 39px;
-            width: 1px;
-            height: 13px;
-            background: rgba(255, 255, 255, .12);
-            margin-left: 10px;
-        }
-
-        .header .inner .nav .nav-panel .button {
-            width: 100px;
-            height: 28px;
-            background: #000;
-            color: white;
-            border: 1px #2E2E2E solid;
-            float: right;
-            margin-top: 30px;
-            margin-left: 50px;
-        }
-
-        .main .inner {
-            width: 1220px;
-            min-height: 4200px;
-            margin: 0 auto;
-        }
-
-        .main .inner .mian-header {
-            height: 90px;
-            /*background: rebeccapurple;*/
-        }
-
-        .main .inner .mian-header .mh-list {
-            float: left;
-        }
-
-        .main .inner .mian-header .mh-list li {
-            float: left;
-            padding: 0 20px;
-            line-height: 80px;
-        }
-
-        .main .inner .mian-header .mh-list li a {
-            color: black;
-            font-size: 14px;
-        }
-
-        .main .inner .mian-header .mh-list li a:hover {
-            color: #0a9dc7;
-        }
-
-        .main .inner .mian-header .mh-div {
-            margin-top: 25px;
-            float: right;
-        }
-
-        .main .inner .mian-header .mh-div img {
-            width: 20px;
-            height: 20px;
-            background: #000;
-            margin: 0 4px;
-        }
-
-        .main .inner .mian-header .mh-div .img_left {
-            float: left;
-        }
-
-        .main .inner .mian-header .mh-div .img_right {
-            float: right;
-        }
-
-        .main .inner .mian-header .mh-div a {
-            color: black;
-            font-size: 14px;
-        }
-
-        .main .inner .mian-header .mh-div a:hover {
-            color: #0a9dc7;
-        }
-
-        .main .inner .main-banner {
-            width: 1220px;
-            height: 500px;
-            background: #ff0d70;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-picture {
-            margin-top: 35px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-picture .picture li {
-            float: left;
-            width: 303px;
-            height: 200px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        /*热门商品热门商品热门商品热门商品热门商品热门商品热门商品热门商品热门商品*/
-        .main .inner .main-PopularCommodity {
-            margin-top: 35px;
-            border-radius: 5px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-PopularCommodity .title {
-            width: 1188px;
+        .right{
+            min-width: 1048px;
             height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
             background: white;
-        }
-
-        .main .inner .main-PopularCommodity .PopularCommodity li {
             float: left;
-            width: 303px;
-            height: 429px;
-            background: white;
-            border: 1px solid silver;
         }
-
-        .main .inner .main-PopularCommodity .PopularCommodity li img {
-            margin: 80px 80px 60px;
-        }
-
-        .main .inner .main-PopularCommodity .PopularCommodity li h3 {
-            margin-top: -30px;
-            text-align: center;
-        }
-
-        .main .inner .main-PopularCommodity .PopularCommodity li p {
-            text-align: center;
-            font-size: 12px;
-            color: #7f7b89;
-            margin-top: 5px;
-        }
-
-        .main .inner .main-PopularCommodity .PopularCommodity li .price {
-            text-align: center;
-        }
-
-        /*.main .inner .main-PopularCommodity .PopularCommodity li .price p{*/
-        /*color: #dc5641;*/
-        /*margin: 30px;*/
-        /*!*float: left;*!*/
-        /*!*margin-left:60px;*!*/
-
-        /*}*/
-        /*.main .inner .main-PopularCommodity .PopularCommodity li .price a{*/
-        /*color: #dc5641;*/
-        /*!*font-size: 18px;*!*/
-        /*!*display: block;*!*/
-        /*!*line-height:90px;*!*/
-
-        /*}*/
-
-        .main .inner .main-OfficialActuarial {
-            margin-top: 35px;
-            border-radius: 5px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-OfficialActuarial .title {
-            width: 1188px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
-            background: white;
-        }
-
-        .main .inner .main-OfficialActuarial .OfficialActuarial li .gfjxi {
-            border-right: none;
-            width: 305px;
-        }
-
-        .main .inner .main-OfficialActuarial .OfficialActuarial li .gfjxi_i {
-            border-left: none;
-        }
-
-        .main .inner .main-OfficialActuarial .OfficialActuarial li i {
+        .right li{
+            width: 105px;
             float: left;
-            width: 303px;
-            height: 429px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        .main .inner .main-BrandSelection {
-            margin-top: 35px;
-            border-radius: 5px;
-            overflow: hidden;
-            border-radius: 10px;
-
-        }
-
-        .main .inner .main-BrandSelection .title {
-            width: 1188px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
-            background: white;
-        }
-
-        .main .inner .main-BrandSelection .BrandSelection li .gfjxi {
-            width: 305px;
-            border-right: none;
-        }
-
-        .main .inner .main-BrandSelection .BrandSelection li .gfjxi_i {
-            border-left: none;
-        }
-
-        .main .inner .main-BrandSelection .BrandSelection li i {
-            float: left;
-            width: 303px;
-            height: 429px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        .main .inner .main-ScienceTechnology {
-            margin-top: 35px;
-            border-radius: 5px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-ScienceTechnology .title {
-            width: 1188px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
-            background: white;
-        }
-
-        .main .inner .main-ScienceTechnology .ScienceTechnology li {
-            float: left;
-            width: 303px;
-            height: 429px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        .main .inner .main-HammerApplication {
-            margin-top: 35px;
-            border-radius: 5px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-HammerApplication .title {
-            width: 1188px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
-            background: white;
-        }
-
-        .main .inner .main-HammerApplication .HammerApplication li {
-            float: left;
-            width: 303px;
-            height: 360px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        .main .inner .main-ForumSelection {
-            margin-top: 35px;
-            overflow: hidden;
-            border-radius: 10px;
-        }
-
-        .main .inner .main-ForumSelection .title {
-            width: 1188px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px silver solid;
-            background: white;
-        }
-
-        .main .inner .main-ForumSelection .ForumSelection li {
-            float: left;
-            width: 303px;
-            height: 362px;
-            background: white;
-            border: 1px solid silver;
-        }
-
-        .footer {
-            background: #fafafa;
-            border-top: 1px solid #e6e6e6;
-            margin-top: 75px;
-            /*background: #000;*/
-        }
-
-        .footer .inner {
-            width: 1220px;
-            margin: 0 auto;
-            /*background: #000;*/
-        }
-
-        .footer .inner .info {
-            height: 100px;
-            padding: 100px 0 32px;
-            border-bottom: 1px solid #e6e6e6;
-        }
-
-        .footer .inner .info .info-center {
-            height: 100%;
-            /*background: royalblue;*/
             position: relative;
+            /*使用line-height让li往下*/
+            line-height: 60px;
         }
-
-        .footer .inner .info .info-center dl {
-            width: 100px;
-            float: left;
-        }
-
-        .footer .inner .info .info-center dl dt dd {
-            margin-top: 30px;
-        }
-
-        .footer .inner .info .info-center dl a {
-            color: #969696;
-            line-height: 27px;
-        }
-
-        .footer .inner .info .info-center .center-right {
-            float: right;
-        }
-
-        .footer .inner .info .info-center .center-right .tel {
-            font-size: 30px;
-            color: #646464;
-        }
-
-        .footer .inner .info .info-center .center-right p {
-            font-size: 12px;
-            color: #c3c3c3;
-            margin-top: 5px;
-        }
-
-        .footer .inner .info .info-center .center-right button {
-            width: 130px;
-            height: 34px;
-            float: right;
+        .right li a{
+            width: 105px;
+            height: 60px;
+            color: #333333;
+            font-size: 16px;
             text-align: center;
-            color: #5079d9;
-            border: 1px solid #dcdcdc;
-            border-radius: 5px;
-            margin-top: 8px;
-            background: white;
+            display: block;
+        }
+        .right li a:hover{
+            color: #4D5FA9;
+            border-top: 5px solid steelblue;
         }
 
-        .footer .inner .bottom {
-            /*background: rebeccapurple;*/
-            color: #434d55;
-            font-size: 12px;
-            padding: 40px 0;
-        }
-
-        .footer .inner .bottom .bot-center {
-            /*height: 15px;*/
-            /*background: royalblue;*/
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenleft h4 {
+        .right i{
+            width: 60px;
+            height: 57px;
             float: left;
-            height: 15px;
-            line-height: 15px;
-            color: #757575;
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenleft h5 {
-            padding: 0 6px;
-            float: left;
-            height: 15px;
-            line-height: 15px;
-            color: #757575;
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .privacy {
-            float: left;
-            margin: 0 0 0 12px;
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .divright {
-            float: right;
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .divright img {
-            width: 10px;
-            height: 10px;
-            background: red;
-            float: left;
+            border-right:1px solid gainsboro;
             margin-top: 3px;
         }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .divright p {
+        .right .ul_2{
             float: right;
-            margin-left: 5px;
         }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .privacy li {
-            float: left;
-            line-height: 12px;
-            padding: 1px 10px 0;
-            border-left: 1px solid #ccc;
+        .right .ul_2 li{
+            width: auto;
+            margin: 0 10px;
         }
-
-        .footer .inner .bottom .bot-center .bot-cenleft .privacy li a {
-            /*color: #bdbdbd;*/
-            color: #406dd6;
-            font-size: 12px;
-            height: 12px;
-            line-height: 1;
+        .right .ul_2 li a{
+            /*width: 80px;*/
         }
-
-        .footer .inner .bottom .bot-center .bot-cenright {
-            float: left;
-            margin-top: 5px;
-            margin-left: -10px;
-        }
-
-        .footer .inner .bottom .bot-center .bot-cenright a {
-            padding: 0 10px;
-            color: #bdbdbd;
-            font-size: 12px;
-            height: 12px;
-            line-height: 1;
-        }
-
-        .title {
-            background: #fafafa;
-            line-height: 60px;
-            font-size: 18px;
-            color: #666;
-            position: relative;
+        .right .ul_2 li i{
+            width: 40px;
+            height: 40px;
+            background: #000;
+            float: none;
             display: block;
-            font-weight: 400;
-            /*margin-left: 30px*/
-            padding-left: 30px;
+            margin-top: 9px;
+        }
+
+        .clear{
+            clear: both;
         }
     </style>
+
 </head>
-
-
 <body>
-<div class="header">
-    <div class="inner">
-        <div class="logo">
-            <img src="image/header.png" alt="">
-        </div>
-        <div class="nav">
-            <ul class="nav-main">
-                <li><a href="javaScript:void(0) " class="ac">在线商城</a></li>
-                <li><a href="javaScript:void(0) ">Smartisan M1 / M1L</a></li>
-                <li><a href="javaScript:void(0) ">Smartisan OS</a></li>
-                <li><a href="javaScript:void(0) ">欢喜云</a></li>
-                <li><a href="javaScript:void(0) ">应用下载</a></li>
-                <li><a href="javaScript:void(0) ">官方论坛</a></li>
-            </ul>
-            <div class="nav-panel">
-                <div class="line"></div>
-                <button class="button">登录</button>
-            </div>
-        </div>
-        <!--<div class="nav">-->
-        <!--<div class="navleft">-->
+<div class="left">
+    <div class="header" >
+        <i></i>
+        <span>仓储管理系统</span>
+    </div>
+    <div class="search">
+        <input type="text" class="text" placeholder="搜索..">
+        git add *
+        git push origin
+        git push origin
+    </div>
+    <!--<div class="list">-->
         <!--<ul>-->
-
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
+            <!--<li><i></i><a href="javaScript:void (0)">客户配置管理</a><div class="clear"></div></li>-->
         <!--</ul>-->
-        <!--</div>-->
-        <!--<div class="navright">-->
-        <!--<div class="border_ri "></div>-->
-        <!--&lt;!&ndash;<a href="javaScript:void (0)"><input type="text" class="text" value="登录"  ></a>&ndash;&gt;-->
-        <!--<button class="nav_button">登录</button>-->
-        <!--</div>-->
-        <!--</div>-->
-    </div>
-</div>
-<div class="main">
-    <div class="inner">
-        <div class="mian-header">
-            <ul class="mh-list">
-                <li><a href="javaScript" class="ac"><b>精选</b></a></li>
-                <li><a href="javaScript">手机</a></li>
-                <li><a href="javaScript">耳机/音响</a></li>
-                <li><a href="javaScript">背壳/保护套</a></li>
-                <li><a href="javaScript">情杯"背壳"</a></li>
-                <li><a href="javaScript">其他周边</a></li>
-                <li><a href="javaScript">保修服务</a></li>
-                <li><a href="javaScript">全部商品</a></li>
-            </ul>
-            <div class="mh-div">
-                <img class="img_left" src="" alt="">
-                <a href="">购物车</a>
-                <img class="img_right" src="" alt="">
-            </div>
-        </div>
-        <div class="main-banner"></div>
-        <div class="main-picture">
-            <ul class="picture">
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--热门商品-->
-        <div class="main-PopularCommodity">
-            <div class="title">热门商品</div>
-            <ul class="PopularCommodity">
-                <li>
-                    <img src="image/main_01.png" alt="">
-                    <h3>《深泽直人》</h3>
-                    <p>首次面向中国读者介绍其产品</p>
-                    <!--<div class="price">-->
-                    <!--<p>￥</p>-->
-                    <!--<a href="javaScript:void (0)">199.00</b></a>-->
-                    <!--</div>-->
-                </li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--官方精选-->
-        <div class="main-OfficialActuarial">
-            <div class="title">官方精选</div>
-            <ul class="OfficialActuarial">
-                <li><i class="gfjxi"></i><i class="gfjxi_i"></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--品牌精选-->
-        <div class="main-BrandSelection">
-            <div class="title">品牌精选</div>
-            <ul class="BrandSelection">
-                <li><i class="gfjxi"></i><i class="gfjxi_i"></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--锤子科技动态-->
-        <div class="main-ScienceTechnology">
-            <div class="title">锤子科技动态</div>
-            <ul class="ScienceTechnology">
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--锤子应用-->
-        <div class="main-HammerApplication">
-            <div class="title">锤子应用</div>
-            <ul class="HammerApplication">
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-        <!--论坛精选-->
-        <div class="main-ForumSelection">
-            <div class="title">论坛精选</div>
-            <ul class="ForumSelection">
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <li><i></i></li>
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="footer">
-    <div class="inner">
-        <div class="info">
-            <div class="info-center">
-                <dl>
-                    <dt>订单服务</dt>
-                    <dd><a href="javaScript:void (0)">购买指南</a></dd>
-                    <dd><a href="javaScript:void (0)">支付方式 </a></dd>
-                    <dd><a href="javaScript:void (0)">送货政策</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <dl>
-                    <dt>服务支持</dt>
-                    <dd><a href="javaScript:void (0)">售后服务</a></dd>
-                    <dd><a href="javaScript:void (0)">维修门店 </a></dd>
-                    <dd><a href="javaScript:void (0)">零售门店</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <dl>
-                    <dt>自动服务</dt>
-                    <dd><a href="javaScript:void (0)">热点咨询</a></dd>
-                    <dd><a href="javaScript:void (0)">预约购买 </a></dd>
-                    <dd><a href="javaScript:void (0)">订单物流</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <dl>
-                    <dt>媒体中心</dt>
-                    <dd><a href="javaScript:void (0)">新闻动态</a></dd>
-                    <dd><a href="javaScript:void (0)">官方视频 </a></dd>
-                    <dd><a href="javaScript:void (0)">图频资源</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <dl>
-                    <dt>关于公司</dt>
-                    <dd><a href="javaScript:void (0)">公司简介</a></dd>
-                    <dd><a href="javaScript:void (0)">加入我们 </a></dd>
-                    <dd><a href="javaScript:void (0)">联系我们</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <dl>
-                    <dt>关注我们</dt>
-                    <dd><a href="javaScript:void (0)">新浪微博</a></dd>
-                    <dd><a href="javaScript:void (0)">官方微信 </a></dd>
-                    <dd><a href="javaScript:void (0)">官方贴吧</a></dd>
-                    <div class="clear"></div>
-                </dl>
-                <div class="center-right">
-                    <a class="tel" href="">400-619-0909</a>
-                    <p>周一至周日 9:00-18:00（仅收市话费)</p>
-                    <button><a href="javaScript:void(0) ">在线帮助</a></button>
-                </div>
 
-            </div>
-            <div class="foot_tel">
-                <!--<a class="tel" href="javaScript:void(0)">400-619-0909</a><br><br><br>-->
-                <!--<p>周一至周日 9:00-18:00（仅收市话费）</p>-->
-                <!--<button>-->
-                <!--<img src="" alt="">-->
-                <!--<a href="javaScript:void (0)">在线帮助</a>-->
-                <!--</button>-->
-            </div>
-        </div>
-        <div class="bottom">
-            <div class="bot-center">
-                <div class="bot-cenleft">
-                    <h4>Copyright © 2017, Smartisan Digital Co., Ltd. All Rights Reserved.</h4>
-                    <h5>北京锤子数码科技有限公司</h5>
-                    <ul class="privacy">
-                        <li><a href="javaScript:void (0)">法律声明</a></li>
-                        <li><a href="javaScript:void (0)">隐私条款</a></li>
-                        <li><a href="javaScript:void (0)">开发者中心</a></li>
-                        <div class="clear"></div>
-                    </ul>
-                    <div class="divright">
-                        <img src="" alt="">
-                        <p>中文</p>
-                    </div>
-
-                    <div class="clear"></div>
-                </div>
-                <div class="bot-cenright">
-                    <a href="javaScript:void (0)">京ICP备14041720号-1</a>
-                    <a href="javaScript:void (0)">京ICP证140622号</a>
-                    <a href="javaScript:void (0)">京公网安备11010502025474</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--</div>-->
 </div>
+<!--<div class="right">-->
+    <!--<i></i>-->
+    <!--<ul>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a><div class="clear"></div></li>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a></li>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a></li>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a></li>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a></li>-->
+        <!--<li><a href="javaScript:void (0)">资源管理</a></li>-->
+    <!--</ul>-->
+    <!--<ul class="ul_2">-->
+        <!--<li><i></i></li>-->
+        <!--<li><a href="javaScript:void (0)">九阳操作员</a></li>-->
+        <!--<li><i></i></li>-->
+    <!--</ul>-->
+<!--</div>-->
 </body>
-
-
-
 </html>
